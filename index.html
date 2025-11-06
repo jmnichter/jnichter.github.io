@@ -1,63 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- SEO -->
   <title>Jacob Nichter | Senior Process Engineer & Operations Leader</title>
-  <meta name="description" content="Senior Process Engineer & Operations Leader driving clarity, efficiency, and scale across complex systems. Continuous improvement, program leadership, and data driven operations.">
-  <link rel="canonical" href="https://jnichter.com/">
+  <meta name="description" content="Senior Process Engineer & Operations Leader. Driving clarity, efficiency, and scale across complex systems with continuous improvement, program leadership, and data-informed operations." />
+  <link rel="canonical" href="https://jnichter.com/" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Jacob Nichter | Senior Process Engineer & Operations Leader">
-  <meta property="og:description" content="Driving clarity, efficiency, and scale across complex systems.">
-  <meta property="og:url" content="https://jnichter.com/">
-  <meta property="og:image" content="https://jnichter.com/images/portrait.jpg">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jacob Nichter | Senior Process Engineer & Operations Leader" />
+  <meta property="og:description" content="Driving clarity, efficiency, and scale across complex systems." />
+  <meta property="og:url" content="https://jnichter.com/" />
+  <meta property="og:image" content="https://jnichter.com/images/portrait.jpg" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Jacob Nichter | Senior Process Engineer & Operations Leader">
-  <meta name="twitter:description" content="Driving clarity, efficiency, and scale across complex systems.">
-  <meta name="twitter:image" content="https://jnichter.com/images/portrait.jpg">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jacob Nichter | Senior Process Engineer & Operations Leader" />
+  <meta name="twitter:description" content="Driving clarity, efficiency, and scale across complex systems." />
+  <meta name="twitter:image" content="https://jnichter.com/images/portrait.jpg" />
 
-  <!-- Schema.org -->
+  <!-- Schema.org Person -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Jacob Nichter",
     "jobTitle": "Senior Process Engineer & Operations Leader",
-    "description": "Leader focused on scalable operations, continuous improvement, and data informed decision making.",
+    "description": "Leader focused on scalable operations, continuous improvement, and data-informed decision making.",
     "url": "https://jnichter.com/",
     "image": "https://jnichter.com/images/portrait.jpg",
-    "email": "mailto:beta.data@icloud.com",
-    "knowsAbout": ["Process Improvement","Operations Management","Continuous Improvement","Lean Six Sigma","KPIs and Dashboards","Change Management","Scale Up"],
+    "email": "mailto:jacob@jnichter.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pasadena",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "knowsAbout": [
+      "Process Improvement",
+      "Operations Management",
+      "Program Management",
+      "Continuous Improvement",
+      "Lean Six Sigma",
+      "KPIs and Dashboards",
+      "Change Management",
+      "Scale Up",
+      "Technical Program Management"
+    ],
     "sameAs": [
       "https://www.linkedin.com/in/jnichter",
-      "https://www.credly.com/users/jacob-nichter",
-      "https://jnichter.com/resume.pdf"
+      "https://www.credly.com/users/jnichter",
+      "https://jnichter.com/resume.html"
     ]
   }
   </script>
 
   <!-- Styles -->
   <style>
-    body { font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,segoe ui,helvetica neue,helvetica,Ubuntu,roboto,noto,arial,sans-serif; margin:0; color:#222; background:#fff; line-height:1.5; }
-    header { padding:80px 20px; text-align:center; max-width:900px; margin:auto; }
-    h1 { font-size:2.8rem; margin-bottom:6px; color:#111; }
-    p.tagline { font-size:1.3rem; margin-top:0; color:#444; }
-    nav { margin-top:28px; display:flex; justify-content:center; flex-wrap:wrap; gap:14px; }
-    nav a { padding:10px 14px; border-radius:10px; background:#f5f7ff; text-decoration:none; color:#0a57ff; font-weight:600; }
-    .badge-base { display:flex; justify-content:center; margin-top:14px; }
-    .section { max-width:900px; margin:60px auto; padding:0 20px; }
-    h2 { font-size:1.8rem; margin-bottom:10px; }
-    footer { margin-top:90px; padding:20px; text-align:center; font-size:0.9rem; color:#888; }
-    img.avatar { border-radius:50%; width:180px; height:180px; object-fit:cover; }
+    :root{
+      --ink:#111; --text:#222; --muted:#555; --accent:#0a57ff; --bg:#fff;
+      --chip:#f5f7ff; --line:#e9ecf3; --card:#fafbff;
+    }
+    html,body{
+      margin:0; background:var(--bg); color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Arial,Roboto,Noto,sans-serif;
+      line-height:1.5;
+    }
+    a{ color:var(--accent); text-decoration:none; }
+    header{ padding:72px 20px 32px; text-align:center; max-width:980px; margin:auto; }
+    .avatar{ width:164px; height:164px; object-fit:cover; border-radius:50%; }
+    h1{ font-size:2.6rem; margin:14px 0 6px; color:var(--ink); }
+    .tagline{ font-size:1.15rem; color:#444; margin:0; }
+    .nav{ margin-top:24px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+    .btn{
+      display:inline-block; background:var(--chip); color:var(--accent); font-weight:700;
+      padding:10px 14px; border-radius:12px; border:1px solid var(--line);
+    }
+    .wrap{ max-width:980px; margin:36px auto 80px; padding:0 20px; }
+    .grid{ display:grid; grid-template-columns:1.2fr .8fr; gap:20px; }
+    @media (max-width:900px){ .grid{ grid-template-columns:1fr; } }
+    .card{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; }
+    .card h2{ font-size:1.2rem; margin:0 0 8px; color:var(--ink); }
+    section{ margin-bottom:18px; }
+    h3{ font-size:1.25rem; margin:0 0 8px; color:var(--ink); }
+    p{ margin:0 0 10px; }
+    footer{ margin:72px 0 24px; text-align:center; color:#888; font-size:.95rem; }
+    .badge-wrap{ display:flex; justify-content:center; }
+    .badge-note{ margin-top:8px; text-align:center; color:var(--muted); font-size:.9rem; }
   </style>
 
-  <!-- Google Analytics -->
+  <!-- Google Analytics 4 -->
+  <!-- Replace G-XXXXXXX with your GA4 Measurement ID -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -66,74 +102,81 @@
     gtag('config', 'G-XXXXXXX', { anonymize_ip: true });
 
     function trackLinkClick(name, url) {
-      gtag('event', 'select_content', {
-        content_type: 'nav_link',
-        item_id: name,
-        link_url: url
-      });
+      try {
+        gtag('event','select_content',{content_type:'nav_link',item_id:name,link_url:url});
+      } catch(e){}
     }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('[data-track="nav"]').forEach(function (el) {
-        el.addEventListener('click', function () {
-          trackLinkClick(el.getAttribute('data-linkname'), el.href || el.getAttribute('href'));
+    document.addEventListener('DOMContentLoaded',function(){
+      document.querySelectorAll('[data-track="nav"]').forEach(function(el){
+        el.addEventListener('click',function(){
+          trackLinkClick(el.getAttribute('data-linkname')||el.textContent.trim(), el.href||el.getAttribute('href'));
         });
       });
     });
   </script>
 </head>
-
 <body>
 
   <header>
-    <img class="avatar" src="images/portrait.jpg" alt="Portrait of Jacob Nichter">
-    <h1>Senior Process Engineer & Operations Leader</h1>
+    <img class="avatar" src="images/portrait.jpg" alt="Portrait of Jacob Nichter" />
+    <h1>Senior Process Engineer &amp; Operations Leader</h1>
     <p class="tagline">Driving clarity, efficiency, and scale across complex systems.</p>
 
-    <nav aria-label="Primary">
-      <a href="/resume.pdf" data-track="nav" data-linkname="Resume">Resume</a>
-
-      <!-- LinkedIn Badge -->
-      <div class="badge-base LI-profile-badge"
-        data-locale="en_US"
-        data-size="large"
-        data-theme="dark"
-        data-type="VERTICAL"
-        data-vanity="jnichter"
-        data-version="v1">
-        <a class="badge-base__link LI-simple-link"
-           href="https://www.linkedin.com/in/jnichter?trk=profile-badge"
-           data-track="nav"
-           data-linkname="LinkedIn">Jacob Nichter</a>
-      </div>
-
-      <a href="https://www.credly.com/users/jacob-nichter" target="_blank" data-track="nav" data-linkname="Credly">Credly</a>
-      <a href="mailto:beta.data@icloud.com" data-track="nav" data-linkname="Email">Email me</a>
-      <a href="/resume.html" data-track="nav" data-linkname="Resume Page">Resume page</a>
+    <nav class="nav" aria-label="Primary actions">
+      <a class="btn" href="/resume.html" data-track="nav" data-linkname="Resume">Resume</a>
+      <a class="btn" href="https://www.linkedin.com/in/jnichter" target="_blank" rel="noopener" data-track="nav" data-linkname="LinkedIn">LinkedIn</a>
+      <a class="btn" href="https://www.credly.com/users/jnichter" target="_blank" rel="noopener" data-track="nav" data-linkname="Credly">Credly</a>
+      <a class="btn" href="mailto:jacob@jnichter.com" data-track="nav" data-linkname="Email">Email me</a>
     </nav>
   </header>
 
-  <section class="section">
-    <h2>Process & Operational Excellence</h2>
-    <p>Designing and improving processes for reliability, throughput, and cost. Establishing KPIs and dashboards to align teams and drive measurable outcomes.</p>
-  </section>
+  <main class="wrap" role="main">
+    <div class="grid">
 
-  <section class="section">
-    <h2>Leadership & Program Execution</h2>
-    <p>Strategic planning, change management, and team enablement with a focus on measurable impact and sustainable success.</p>
-  </section>
+      <div>
+        <section class="card">
+          <h3>Process &amp; Operational Excellence</h3>
+          <p>Designing and improving processes for reliability, throughput, and cost. Establishing KPIs and dashboards that align teams and drive measurable outcomes.</p>
+        </section>
 
-  <section class="section">
-    <h2>Data Informed Decisions</h2>
-    <p>Using analytics, SPC, and DOE to diagnose variability, optimize performance, and scale repeatable results across products and sites.</p>
-  </section>
+        <section class="card">
+          <h3>Leadership &amp; Program Execution</h3>
+          <p>Bridging strategy and execution across cross functional teams. Roadmapping, risk management, stakeholder communication, and change control.</p>
+        </section>
+
+        <section class="card">
+          <h3>Data-Informed Decisions</h3>
+          <p>Using analytics, SPC, and DOE to diagnose variability, optimize performance, and scale repeatable results.</p>
+        </section>
+      </div>
+
+      <aside class="card" aria-labelledby="badge-head">
+        <h2 id="badge-head">LinkedIn Badge</h2>
+        <div class="badge-wrap">
+          <div class="badge-base LI-profile-badge"
+               data-locale="en_US"
+               data-size="large"
+               data-theme="dark"
+               data-type="VERTICAL"
+               data-vanity="jnichter"
+               data-version="v1">
+            <a class="badge-base__link LI-simple-link"
+               href="https://www.linkedin.com/in/jnichter?trk=profile-badge">Jacob Nichter</a>
+          </div>
+        </div>
+        <div class="badge-note">
+          Prefer a quick link? <a href="https://www.linkedin.com/in/jnichter" target="_blank" rel="noopener">Open profile</a>
+        </div>
+      </aside>
+
+    </div>
+  </main>
 
   <footer>
-    © <script>document.write(new Date().getFullYear());</script> Jacob Nichter
+    © <script>document.write(new Date().getFullYear());</script> Jacob Nichter · <a href="mailto:jacob@jnichter.com">jacob@jnichter.com</a>
   </footer>
 
   <!-- LinkedIn badge script -->
   <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
 </body>
 </html>
