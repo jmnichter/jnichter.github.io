@@ -19,7 +19,7 @@
       darkMode: 'class',
       theme: {
         extend: {
-          fontFamily: { sans: ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"] },
+          fontFamily: { sans: ["Inter","system-ui","-apple-system","Segoe UI","Roboto","Helvetica","Arial","sans-serif"] },
           colors: { brand: { DEFAULT: "#0ea5e9", dark: "#0284c7" } },
           boxShadow: { soft: "0 10px 30px rgba(2,132,199,.15)" }
         }
@@ -27,13 +27,13 @@
     };
   </script>
 
-  <!-- Google Analytics -->
+  <!-- Google Analytics (replace with your GA4 Measurement ID) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6W9E5Y9N8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-J6W9E5Y9N8'); /* Replace with your GA4 measurement ID */
+    gtag('config', 'G-J6W9E5Y9N8'); /* <-- replace with your GA4 ID */
   </script>
 
   <style>
@@ -53,6 +53,7 @@
         <a href="#work" class="link-underline">Work</a>
         <a href="#expertise" class="link-underline">Expertise</a>
         <a href="#credentials" class="link-underline">Credentials</a>
+        <a href="#featured-badges" class="link-underline">Featured</a>
         <a href="#contact" class="link-underline">Contact</a>
       </nav>
       <button id="themeToggle" class="hover-float rounded-xl border px-3 py-2 text-sm border-slate-200 dark:border-slate-800" aria-label="Toggle theme">🌙</button>
@@ -68,7 +69,7 @@
         Senior Process Engineer focused on biotech manufacturing & process development. Lean Six Sigma Black Belt. Data-driven, people-centred leadership.
       </p>
       <div class="mt-8 flex flex-wrap justify-center gap-3">
-        <a href="/assets/Jacob_Nichter_Resume.pdf" target="_blank" class="hover-float inline-flex items-center rounded-xl bg-brand px-6 py-3 text-white text-base font-medium shadow-soft focus:outline-none focus:ring-2 focus:ring-brand/50">📄 View My Resume</a>
+        <a href="assets/Jacob_Nichter_Resume.pdf" target="_blank" class="hover-float inline-flex items-center rounded-xl bg-brand px-6 py-3 text-white text-base font-medium shadow-soft focus:outline-none focus:ring-2 focus:ring-brand/50">📄 View My Resume</a>
         <a href="https://www.linkedin.com/in/jacobnichter" target="_blank" rel="noopener" class="hover-float inline-flex items-center rounded-xl px-6 py-3 text-base bg-slate-900 text-white dark:bg-white dark:text-slate-900">Connect on LinkedIn</a>
       </div>
     </div>
@@ -79,7 +80,7 @@
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-end justify-between">
         <h2 class="text-2xl font-semibold">Selected highlights</h2>
-        <a href="/assets/Jacob_Nichter_Resume.pdf" target="_blank" class="text-sm link-underline">Full resume →</a>
+        <a href="assets/Jacob_Nichter_Resume.pdf" target="_blank" class="text-sm link-underline">Full resume →</a>
       </div>
       <div class="mt-8 grid md:grid-cols-3 gap-6">
         <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float">
@@ -136,36 +137,44 @@
   <section id="featured-badges" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-semibold">Featured credentials</h2>
+
       <div class="mt-8 grid gap-6 md:grid-cols-2">
         <!-- Badge 1 -->
         <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-center gap-4">
-          <a href="https://www.credly.com/badges/YOUR-BADGE-1" target="_blank" rel="noopener" aria-label="Verify badge 1 on Credly">
-            <img src="/assets/credly/badge-1.png" width="96" height="96" loading="lazy" alt="Credential badge 1" class="rounded-xl" />
+          <a href="https://www.credly.com/badges/e9013411-d61d-4310-8358-c239f526d41a/public_url" target="_blank" rel="noopener" aria-label="Verify badge #1 on Credly">
+            <img src="assets/credly/badge-1.png?v=1" width="96" height="96" loading="lazy" alt="Google/Gies College of Business Dual Credential badge" class="rounded-xl" />
           </a>
           <div>
-            <h3 class="font-medium">Credential Title #1</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300">Short description of what this credential certifies or represents.</p>
+            <h3 class="font-medium">Google/Gies College of Business Dual Credential</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">
+              Joint certification from Coursera, Google, and the University of Illinois Gies College of Business — demonstrating mastery of data analytics and business strategy integration.
+            </p>
             <div class="mt-3 flex flex-wrap gap-2">
-              <a href="https://www.credly.com/badges/YOUR-BADGE-1" target="_blank" class="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm">Verify on Credly</a>
+              <a href="https://www.credly.com/badges/e9013411-d61d-4310-8358-c239f526d41a/public_url" target="_blank" class="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm">Verify on Credly</a>
             </div>
           </div>
         </article>
 
         <!-- Badge 2 -->
         <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-center gap-4">
-          <a href="https://www.credly.com/badges/YOUR-BADGE-2" target="_blank" rel="noopener" aria-label="Verify badge 2 on Credly">
-            <img src="/assets/credly/badge-2.png" width="96" height="96" loading="lazy" alt="Credential badge 2" class="rounded-xl" />
+          <a href="https://www.credly.com/badges/246fc51b-4185-48c1-96c5-c2d37a71ccc7/public_url" target="_blank" rel="noopener" aria-label="Verify badge #2 on Credly">
+            <img src="assets/credly/badge-2.png?v=1" width="96" height="96" loading="lazy" alt="Google/Gies College of Business Dual Credential badge" class="rounded-xl" />
           </a>
           <div>
-            <h3 class="font-medium">Credential Title #2</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300">Brief description of this certification or achievement.</p>
+            <h3 class="font-medium">Google/Gies College of Business Dual Credential</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">
+              Earned through completion of both the Google Data Analytics Certificate and Gies Business foundations program, linking analytical insight with leadership and management expertise.
+            </p>
             <div class="mt-3 flex flex-wrap gap-2">
-              <a href="https://www.credly.com/badges/YOUR-BADGE-2" target="_blank" class="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm">Verify on Credly</a>
+              <a href="https://www.credly.com/badges/246fc51b-4185-48c1-96c5-c2d37a71ccc7/public_url" target="_blank" class="inline-flex items-center rounded-lg border border-slate-200 dark:border-slate-700 px-3 py-1.5 text-sm">Verify on Credly</a>
             </div>
           </div>
         </article>
       </div>
-      <p class="mt-4 text-sm text-slate-500">See more credentials on <a href="https://www.linkedin.com/in/jacobnichter" target="_blank" class="link-underline">LinkedIn</a>.</p>
+
+      <p class="mt-4 text-sm text-slate-500">
+        See more credentials on <a href="https://www.linkedin.com/in/jacobnichter" target="_blank" class="link-underline">LinkedIn</a>.
+      </p>
     </div>
   </section>
 
@@ -182,7 +191,7 @@
           <div class="text-sm font-medium">Book time</div>
           <div class="mt-1 text-slate-600 dark:text-slate-300">Schedule a chat</div>
         </a>
-        <a href="/assets/Jacob_Nichter_Resume.pdf" target="_blank" class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float block">
+        <a href="assets/Jacob_Nichter_Resume.pdf" target="_blank" class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float block">
           <div class="text-sm font-medium">Resume</div>
           <div class="mt-1 text-slate-600 dark:text-slate-300">PDF download</div>
         </a>
