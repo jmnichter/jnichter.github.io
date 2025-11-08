@@ -25,12 +25,164 @@
         }
       }
     };
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6W9E5Y9N8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J6W9E5Y9N8'); /* Replace with your GA4 measurement ID */
+  </script>
+
+  <style>
+    .hover-float { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s; }
+    .hover-float:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,.08); }
+    .link-underline { background-image: linear-gradient(currentColor, currentColor); background-position: 0 100%; background-repeat: no-repeat; background-size: 0% 2px; transition: background-size .3s; }
+    .link-underline:hover { background-size: 100% 2px; }
+  </style>
+</head>
+
+<body class="bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-950/60 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#home" class="font-semibold tracking-tight text-slate-900 dark:text-white">JN</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#work" class="link-underline">Work</a>
+        <a href="#expertise" class="link-underline">Expertise</a>
+        <a href="#credentials" class="link-underline">Credentials</a>
+        <a href="#contact" class="link-underline">Contact</a>
+      </nav>
+      <button id="themeToggle" class="hover-float rounded-xl border px-3 py-2 text-sm border-slate-200 dark:border-slate-800" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50 to-transparent dark:from-sky-900/20"></div>
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center">
+      <h1 class="text-4xl/[1.1] sm:text-5xl/[1.05] font-bold tracking-tight">Jacob Nichter</h1>
+      <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+        Senior Process Engineer focused on biotech manufacturing & process development. Lean Six Sigma Black Belt. Data-driven, people-centred leadership.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="/assets/Jacob_Nichter_Resume.pdf" target="_blank" class="hover-float inline-flex items-center rounded-xl bg-brand px-6 py-3 text-white text-base font-medium shadow-soft focus:outline-none focus:ring-2 focus:ring-brand/50">📄 View My Resume</a>
+        <a href="https://www.linkedin.com/in/jacobnichter" target="_blank" rel="noopener" class="hover-float inline-flex items-center rounded-xl px-6 py-3 text-base bg-slate-900 text-white dark:bg-white dark:text-slate-900">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between">
+        <h2 class="text-2xl font-semibold">Selected highlights</h2>
+        <a href="/assets/Jacob_Nichter_Resume.pdf" target="_blank" class="text-sm link-underline">Full resume →</a>
+      </div>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float">
+          <h3 class="font-semibold">Pilot Plant Manager</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Led cross-functional GMP operations, delivering tech transfers and deviation reduction across upstream/downstream processes.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float">
+          <h3 class="font-semibold">Process Development Engineer</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Designed and analyzed DOEs for yield & robustness, translating insights into shop-floor standards and SOP improvements.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float">
+          <h3 class="font-semibold">Continuous Improvement</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Lean Six Sigma projects driving OEE, cycle-time, and right-first-time gains with SPC, CPV, and root-cause frameworks.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise -->
+  <section id="expertise" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-semibold">Expertise</h2>
+      <div class="mt-6 grid gap-3 md:grid-cols-3">
+        <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-5 hover-float">
+          <h3 class="font-medium">Manufacturing Science & Technology</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Tech transfers, process validation, CPV dashboards, deviation trend reduction.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-5 hover-float">
+          <h3 class="font-medium">Analytics & Automation</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Python, SQL, Tableau, SPC, data pipelines for batch analytics and DOE modeling.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 dark:border-slate-800 p-5 hover-float">
+          <h3 class="font-medium">Leadership & Quality</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">LSS Black Belt, GMP rigor, cross-functional mentoring, SOP authorship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credentials -->
+  <section id="credentials" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-semibold">Credentials</h2>
+      <ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between"><span>Lean Six Sigma Black Belt</span><span class="text-xs text-slate-500">Credly</span></li>
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between"><span>Google Data Analytics (Coursera)</span><span class="text-xs text-slate-500">Completed</span></li>
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between"><span>PMP (in progress)</span><span class="text-xs text-slate-500">2026 target</span></li>
+      </ul>
+      <p class="mt-4 text-sm text-slate-500">Full list on <a href="https://www.linkedin.com/in/jacobnichter" class="link-underline" target="_blank">LinkedIn</a>.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-semibold">Contact</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <a href="mailto:jacob@jnichter.com" class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float block">
+          <div class="text-sm font-medium">Email</div>
+          <div class="mt-1 text-slate-600 dark:text-slate-300">jacob@jnichter.com</div>
+        </a>
+        <a href="https://cal.com/" target="_blank" class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float block">
+          <div class="text-sm font-medium">Book time</div>
+          <div class="mt-1 text-slate-600 dark:text-slate-300">Schedule a chat</div>
+        </a>
+        <a href="/assets/Jacob_Nichter_Resume.pdf" target="_blank" class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float block">
+          <div class="text-sm font-medium">Resume</div>
+          <div class="mt-1 text-slate-600 dark:text-slate-300">PDF download</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-slate-200 dark:border-slate-800">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-sm flex flex-col sm:flex-row gap-4 sm:items-center justify-between">
+      <p class="text-slate-500">© <span id="year"></span> Jacob Nichter</p>
+      <div class="flex gap-4 text-slate-600 dark:text-slate-300">
+        <a href="/privacy" class="link-underline">Privacy</a>
+        <a href="/uses" class="link-underline">Uses</a>
+        <a href="/sitemap.xml" class="link-underline">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dark mode script -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    function applyTheme() {
+      const theme = localStorage.getItem('theme') || 
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      root.classList.toggle('dark', theme === 'dark');
+      toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
     toggle.addEventListener('click', () => {
-      const cur = root.classList.contains('dark') ? 'dark' : 'light';
-      localStorage.setItem('theme', cur === 'dark' ? 'light' : 'dark');
-      apply();
+      const current = root.classList.contains('dark') ? 'dark' : 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', next);
+      applyTheme();
     });
-    apply();
+    applyTheme();
   </script>
 </body>
 </html>
