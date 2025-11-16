@@ -29,7 +29,7 @@
     };
   </script>
 
-  <!-- Google Analytics (real ID) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYTTJTHTTL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -45,28 +45,51 @@
     .link-underline:hover {background-size:100% 2px}
     .fade-in {opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease}
     .fade-in.show {opacity:1; transform:translateY(0)}
-    /* Accessible tooltips (hover + keyboard focus) */
     .ttwrap {position:relative; display:inline-flex; align-items:center}
-    .tt {position:absolute; left:50%; top:100%; margin-top:.5rem; transform:translate(-50%,0) scale(.95);
-         background:rgba(2,6,23,.96); color:#fff; padding:.375rem .5rem; border-radius:.5rem; font-size:.75rem; line-height:1;
-         white-space:nowrap; box-shadow:0 10px 20px rgba(0,0,0,.25); opacity:0; pointer-events:none; transition:opacity .15s, transform .15s; z-index:40}
+    .tt {position:absolute; left:50%; top:100%; margin-top:.5rem; transform:translate(-50%,0) scale(.95); background:rgba(2,6,23,.96); color:#fff; padding:.375rem .5rem; border-radius:.5rem; font-size:.75rem; line-height:1; white-space:nowrap; box-shadow:0 10px 20px rgba(0,0,0,.25); opacity:0; pointer-events:none; transition:opacity .15s, transform .15s; z-index:40}
     .ttwrap:hover .tt, .ttwrap:focus-within .tt {opacity:1; transform:translate(-50%,0) scale(1)}
-    @media (prefers-reduced-motion: reduce) {.hover-float, .link-underline, .fade-in, .tt {transition:none}}
+    @media (prefers-reduced-motion: reduce){.hover-float,.link-underline,.fade-in,.tt{transition:none}}
   </style>
 </head>
 
 <body class="bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+
   <!-- Header -->
   <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-950/60 border-b border-slate-200/60 dark:border-slate-800">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#home" class="font-semibold tracking-tight text-slate-900 dark:text-white">JN</a>
+
+      <!-- Desktop nav -->
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="#work" class="link-underline">Work</a>
-        <a href="#credentials" class="link-underline">Credentials</a>
         <a href="#featured" class="link-underline">Featured</a>
+        <a href="#credentials" class="link-underline">Credentials</a>
         <a href="#contact" class="link-underline">Contact</a>
       </nav>
-      <button id="themeToggle" class="hover-float rounded-xl border px-3 py-2 text-sm border-slate-200 dark:border-slate-800" aria-label="Toggle theme">☀️</button>
+
+      <!-- Theme + mobile toggle -->
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="hover-float rounded-xl border px-3 py-2 text-sm border-slate-200 dark:border-slate-800" aria-label="Toggle theme">☀️</button>
+        <button
+          id="mobileMenuToggle"
+          class="md:hidden hover-float rounded-xl border px-3 py-2 text-sm border-slate-200 dark:border-slate-800"
+          aria-label="Toggle navigation menu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95">
+      <nav class="px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="#work" class="py-1 link-underline">Work</a>
+        <a href="#featured" class="py-1 link-underline">Featured</a>
+        <a href="#credentials" class="py-1 link-underline">Credentials</a>
+        <a href="#contact" class="py-1 link-underline">Contact</a>
+      </nav>
     </div>
   </header>
 
@@ -106,65 +129,12 @@
     </div>
   </section>
 
-  <!-- Credentials -->
-  <section id="credentials" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-semibold">Credentials</h2>
-      <ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
-          <span class="ttwrap">
-            <a href="https://coursera.org/share/1d9734f636e039f1bd2d0d3aa2b45181" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-lss">Lean Six Sigma Black Belt</a>
-            <span class="tt">View verified Coursera certificate</span>
-          </span>
-          <span class="text-xs text-slate-500">Kennesaw State University</span>
-        </li>
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
-          <span class="ttwrap">
-            <a href="https://coursera.org/share/97304e7376df4bfd6a7973f9401c034c" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-rice-leadership">Leadership Development for Engineers</a>
-            <span class="tt">View verified Coursera certificate</span>
-          </span>
-          <span class="text-xs text-slate-500">Rice University</span>
-        </li>
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
-          <span class="ttwrap">
-            <a href="https://coursera.org/share/321017cf80f4b32496969e4c5259e974" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-uiuc-stratlead">Strategic Leadership and Management</a>
-            <span class="tt">View verified Coursera certificate</span>
-          </span>
-          <span class="text-xs text-slate-500">University of Illinois</span>
-        </li>
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
-          <span class="ttwrap">
-            <a href="https://coursera.org/share/d0c143eb290173565d6e1e9ad7067405" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-vu-genai">Generative AI Strategic Leader</a>
-            <span class="tt">View verified Coursera certificate</span>
-          </span>
-          <span class="text-xs text-slate-500">Vanderbilt University</span>
-        </li>
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
-          <span class="ttwrap">
-            <a href="https://coursera.org/share/2dbd695c45cc78b925990447e40fcc53" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-nd-ethics">Ethical Leadership</a>
-            <span class="tt">View verified Coursera certificate</span>
-          </span>
-          <span class="text-xs text-slate-500">University of Notre Dame</span>
-        </li>
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
-          <span class="ttwrap">
-            <a href="https://coursera.org/share/1afa201eb71debdceaca7600f82b07d4" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-wharton-bizanalytics">Business Analytics</a>
-            <span class="tt">View verified Coursera certificate</span>
-          </span>
-          <span class="text-xs text-slate-500">UPenn Wharton</span>
-        </li>
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between"><span>Data Science with Real World Data in Pharma</span><span class="text-xs text-slate-500">Genentech</span></li>
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between"><span>Drug Development Product Management</span><span class="text-xs text-slate-500">UC San Diego</span></li>
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between"><span>Leading People and Teams</span><span class="text-xs text-slate-500">University of Michigan</span></li>
-      </ul>
-    </div>
-  </section>
-
   <!-- Featured -->
   <section id="featured" class="py-16 sm:py-20">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-semibold">Featured credentials</h2>
       <div class="mt-8 grid md:grid-cols-2 gap-8">
+
         <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6">
           <a href="https://www.credly.com/badges/e9013411-d61d-4310-8358-c239f526d41a/public_url" target="_blank" rel="noopener" data-analytics="credly-gpm">
             <img src="badge-1.png" width="160" height="160" loading="lazy" alt="Google Project Management & Professional Success Skills badge" class="rounded-xl shadow-md" />
@@ -177,7 +147,7 @@
 
         <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6">
           <a href="https://www.credly.com/badges/7ed3a42c-1d52-4e25-8994-4a1c23cf4326/public_url" target="_blank" rel="noopener" data-analytics="credly-gda">
-            <img src="badge-3.png" width="160" height="160" loading="lazy" alt="Google Data Analytics Professional Certificate badge" class="rounded-xl shadow-md" />
+            <img src="badge-3.png" width="160" height="160" loading="lazy" alt="Google Data Analytics certificate badge" class="rounded-xl shadow-md" />
           </a>
           <div>
             <h3 class="font-medium text-lg">Google Data Analytics Professional Certificate</h3>
@@ -185,17 +155,93 @@
           </div>
         </article>
 
-        <!-- Six Sigma Black Belt -->
         <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6">
           <a href="https://coursera.org/share/1d9734f636e039f1bd2d0d3aa2b45181" target="_blank" rel="noopener" data-analytics="coursera-lssbb">
             <img src="Jacob_Nichter_Six_Sigma_Black_Belt.png" width="160" height="160" loading="lazy" alt="Six Sigma Black Belt certificate" class="rounded-xl shadow-md" />
           </a>
           <div>
             <h3 class="font-medium text-lg">Six Sigma Black Belt</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Eight-course Coursera specialization with Kennesaw State University covering DMAIC, Lean integration, statistical analysis, and capstone project work.</p>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Eight-course Coursera specialization covering DMAIC, Lean integration, statistical methods, and project execution.</p>
           </div>
         </article>
+
+        <!-- Featured degree -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start">
+          <div>
+            <h3 class="font-medium text-lg">B.S. Chemical Engineering</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
+              University of Notre Dame — rigorous chemical engineering foundation supporting biopharmaceutical manufacturing, process development, and data-driven problem solving.
+            </p>
+          </div>
+        </article>
+
       </div>
+    </div>
+  </section>
+
+  <!-- Credentials -->
+  <section id="credentials" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-semibold">Credentials</h2>
+      <ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+
+        <!-- Six Sigma removed from this list to avoid redundancy with Featured -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span class="ttwrap">
+            <a href="https://coursera.org/share/97304e7376df4bfd6a7973f9401c034c" target="_blank" rel="noopener" class="link-underline font-medium">Leadership Development for Engineers</a>
+            <span class="tt">View certificate</span>
+          </span>
+          <span class="text-xs text-slate-500">Rice University</span>
+        </li>
+
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span class="ttwrap">
+            <a href="https://coursera.org/share/321017cf80f4b32496969e4c5259e974" target="_blank" rel="noopener" class="link-underline font-medium">Strategic Leadership and Management</a>
+            <span class="tt">View certificate</span>
+          </span>
+          <span class="text-xs text-slate-500">University of Illinois</span>
+        </li>
+
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span class="ttwrap">
+            <a href="https://coursera.org/share/d0c143eb290173565d6e1e9ad7067405" target="_blank" rel="noopener" class="link-underline font-medium">Generative AI Strategic Leader</a>
+            <span class="tt">View certificate</span>
+          </span>
+          <span class="text-xs text-slate-500">Vanderbilt University</span>
+        </li>
+
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span class="ttwrap">
+            <a href="https://coursera.org/share/2dbd695c45cc78b925990447e40fcc53" target="_blank" rel="noopener" class="link-underline font-medium">Ethical Leadership</a>
+            <span class="tt">View certificate</span>
+          </span>
+          <span class="text-xs text-slate-500">University of Notre Dame</span>
+        </li>
+
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span class="ttwrap">
+            <a href="https://coursera.org/share/1afa201eb71debdceaca7600f82b07d4" target="_blank" rel="noopener" class="link-underline font-medium">Business Analytics</a>
+            <span class="tt">View certificate</span>
+          </span>
+          <span class="text-xs text-slate-500">UPenn Wharton</span>
+        </li>
+
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span>Data Science with Real World Data in Pharma</span>
+          <span class="text-xs text-slate-500">Genentech</span>
+        </li>
+
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span>Drug Development Product Management</span>
+          <span class="text-xs text-slate-500">UC San Diego</span>
+        </li>
+
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span>Leading People and Teams</span>
+          <span class="text-xs text-slate-500">University of Michigan</span>
+        </li>
+
+      </ul>
     </div>
   </section>
 
@@ -205,34 +251,63 @@
       <h2 class="text-2xl font-semibold mb-4">Let's connect</h2>
       <p class="text-slate-600 dark:text-slate-300 max-w-lg mx-auto">Reach out about biotech, MSAT, process engineering, or leadership opportunities.</p>
       <div class="mt-6 flex flex-wrap justify-center gap-4 text-sm">
-        <a href="mailto:jacob@jnichter.com" class="hover-float rounded-xl border border-slate-200 dark:border-slate-800 px-5 py-2 link-underline" data-analytics="email">jacob@jnichter.com</a>
-        <a href="https://www.linkedin.com/in/jnichter" target="_blank" rel="noopener" class="hover-float rounded-xl border border-slate-200 dark:border-slate-800 px-5 py-2 link-underline" data-analytics="linkedin-contact">LinkedIn</a>
-        <a href="Jacob_Nichter_Resume.pdf" target="_blank" rel="noopener" class="hover-float rounded-xl border border-slate-200 dark:border-slate-800 px-5 py-2 link-underline" data-analytics="resume-contact">Resume (PDF)</a>
+        <a href="mailto:jacob@jnichter.com" class="hover-float rounded-xl border border-slate-200 dark:border-slate-800 px-5 py-2 link-underline">jacob@jnichter.com</a>
+        <a href="https://www.linkedin.com/in/jnichter" target="_blank" rel="noopener" class="hover-float rounded-xl border border-slate-200 dark:border-slate-800 px-5 py-2 link-underline">LinkedIn</a>
+        <a href="Jacob_Nichter_Resume.pdf" target="_blank" rel="noopener" class="hover-float rounded-xl border border-slate-200 dark:border-slate-800 px-5 py-2 link-underline">Resume (PDF)</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-sm text-slate-500 dark:text-slate-400">
-    <p>© <span id="year"></span> Jacob Nichter. All rights reserved. • <a href="https://github.com/jmnichter/jmnichter.github.io" target="_blank" class="link-underline" data-analytics="github-source">Source</a></p>
+    <p>© <span id="year"></span> Jacob Nichter. All rights reserved. • <a href="https://github.com/jmnichter/jmnichter.github.io" target="_blank" class="link-underline">Source</a></p>
   </footer>
 
-  <!-- Theme, year, reveals, click analytics -->
+  <!-- Scripts -->
   <script>
     const storageKey = 'theme';
     const themeToggle = document.getElementById('themeToggle');
+    const mobileToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
     const root = document.documentElement;
 
     function setTheme(t){
-      if(t==='dark'||t===null){ root.classList.add('dark'); themeToggle.textContent='☀️'; }
-      else { root.classList.remove('dark'); themeToggle.textContent='🌙'; }
+      if(t==='dark'||t===null){
+        root.classList.add('dark');
+        themeToggle.textContent='☀️';
+      } else {
+        root.classList.remove('dark');
+        themeToggle.textContent='🌙';
+      }
     }
-    const stored = localStorage.getItem(storageKey); setTheme(stored);
+
+    const stored = localStorage.getItem(storageKey);
+    setTheme(stored);
+
     themeToggle?.addEventListener('click', ()=>{
       const next = root.classList.contains('dark') ? 'light' : 'dark';
       localStorage.setItem(storageKey, next);
       setTheme(next);
-      if(typeof gtag==='function') gtag('event','toggle_theme',{theme:next});
+    });
+
+    // Mobile menu toggle
+    mobileToggle?.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        mobileToggle.setAttribute('aria-expanded', 'true');
+      } else {
+        mobileMenu.classList.add('hidden');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close mobile menu when a link is clicked
+    mobileMenu?.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      });
     });
 
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -240,24 +315,9 @@
     const io = new IntersectionObserver((entries)=>{
       entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('show'); });
     }, { threshold: 0.15 });
+
     document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
-
-    // Click analytics: resume_click for on-site PDFs, outbound_click for external destinations
-    document.addEventListener('click', (e)=>{
-      const link = e.target.closest('a[data-analytics]');
-      if(!link) return;
-      const label = link.dataset.analytics || 'link';
-      const href = link.getAttribute('href') || '';
-      const isExternal = /^https?:\/\//i.test(href) && !href.startsWith(location.origin);
-
-      if(typeof gtag === 'function'){
-        if(!isExternal || href.endsWith('.pdf')){
-          gtag('event', 'resume_click', { event_category: 'engagement', event_label: label, destination: href });
-        } else {
-          gtag('event', 'outbound_click', { event_category: 'engagement', event_label: label, destination: href });
-        }
-      }
-    });
   </script>
+
 </body>
 </html>
