@@ -14,7 +14,8 @@
   <meta name="theme-color" content="#0ea5e9" />
   <link rel="icon" href="/favicon.ico" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -28,7 +29,8 @@
     };
   </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYTTJTHTTL"></script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYTTJTHTTL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -52,18 +54,21 @@
 
 <body class="bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
 
-    <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-950/60 border-b border-slate-200/60 dark:border-slate-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-950/60 border-b border-slate-200/60 dark:border-slate-800">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#home" class="font-semibold tracking-tight text-slate-900 dark:text-white">JN</a>
 
-            <nav class="hidden md:flex items-center gap-6 text-sm">
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="#work" class="link-underline">Work</a>
         <a href="#featured" class="link-underline">Featured</a>
         <a href="#credentials" class="link-underline">Credentials</a>
         <a href="#contact" class="link-underline">Contact</a>
       </nav>
 
-            <div class="flex items-center gap-2">
+      <!-- Theme + mobile toggle -->
+      <div class="flex items-center gap-2">
         <button id="themeToggle" class="hover-float rounded-xl border px-3 py-2 text-sm border-slate-200 dark:border-slate-800" aria-label="Toggle theme">☀️</button>
         <button
           id="mobileMenuToggle"
@@ -77,7 +82,8 @@
       </div>
     </div>
 
-        <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95">
+    <!-- Mobile nav -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95">
       <nav class="px-4 py-3 flex flex-col gap-2 text-sm">
         <a href="#work" class="py-1 link-underline">Work</a>
         <a href="#featured" class="py-1 link-underline">Featured</a>
@@ -87,7 +93,8 @@
     </div>
   </header>
 
-    <section id="home" class="relative overflow-hidden">
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50 to-transparent dark:from-sky-900/20"></div>
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center">
       <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Jacob Nichter</h1>
@@ -101,7 +108,8 @@
     </div>
   </section>
 
-    <section id="work" class="py-16 sm:py-20">
+  <!-- Work -->
+  <section id="work" class="py-16 sm:py-20">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-semibold mb-8">Selected highlights</h2>
       <div class="grid md:grid-cols-3 gap-6">
@@ -121,7 +129,8 @@
     </div>
   </section>
 
-    <section id="featured" class="py-16 sm:py-20">
+  <!-- Featured -->
+  <section id="featured" class="py-16 sm:py-20">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-semibold">Featured credentials</h2>
       <div class="mt-8 grid md:grid-cols-2 gap-8">
@@ -156,17 +165,8 @@
           </div>
         </article>
 
-                <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6">
-          <a href="https://www.credly.com/badges/4f812fcc-2ae6-4c92-93a2-9bd19424f3ad/public_url" target="_blank" rel="noopener">
-            <img src="badge-5.png" width="160" height="160" loading="lazy" alt="Google Business Intelligence badge" class="rounded-xl shadow-md" />
-          </a>
-          <div>
-            <h3 class="font-medium text-lg">Google Business Intelligence</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Expertise in data modeling, SQL, Tableau, and business intelligence reporting.</p>
-          </div>
-        </article>
-
-                <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6">
+        <!-- Featured degree with ND seal icon -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6">
           <a href="https://cbe.nd.edu" target="_blank" rel="noopener">
             <img src="ND_Seal.png" width="160" height="160" loading="lazy" alt="University of Notre Dame Chemical Engineering seal" class="rounded-xl shadow-md object-cover" />
           </a>
@@ -186,12 +186,14 @@
     </div>
   </section>
 
-    <section id="credentials" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
+  <!-- Credentials -->
+  <section id="credentials" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-semibold">Credentials</h2>
       <ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
 
-                <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+        <!-- 1. Leadership Development for Engineers -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
           <span class="ttwrap">
             <a href="https://coursera.org/share/97304e7376df4bfd6a7973f9401c034c" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-rice-leadership">
               Leadership Development for Engineers
@@ -201,7 +203,8 @@
           <span class="text-xs text-slate-500">Rice University</span>
         </li>
 
-                <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+        <!-- 2. Strategic Leadership and Management -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
           <span class="ttwrap">
             <a href="https://coursera.org/share/321017cf80f4b32496969e4c5259e974" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-uiuc-stratlead">
               Strategic Leadership and Management
@@ -211,7 +214,8 @@
           <span class="text-xs text-slate-500">University of Illinois</span>
         </li>
 
-                <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+        <!-- 3. Ethical Leadership -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
           <span class="ttwrap">
             <a href="https://coursera.org/share/2dbd695c45cc78b925990447e40fcc53" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-nd-ethics">
               Ethical Leadership
@@ -221,7 +225,8 @@
           <span class="text-xs text-slate-500">University of Notre Dame</span>
         </li>
 
-                <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+        <!-- 4. Business Analytics -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
           <span class="ttwrap">
             <a href="https://coursera.org/share/1afa201eb71debdceaca7600f82b07d4" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-wharton-bizanalytics">
               Business Analytics
@@ -231,7 +236,8 @@
           <span class="text-xs text-slate-500">UPenn Wharton</span>
         </li>
 
-                <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+        <!-- 5. Business Foundations -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
           <span class="ttwrap">
             <a href="https://coursera.org/share/761ef036d31166f6c6d1c6285c094e1e" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-wharton-bizfound">
               Business Foundations
@@ -241,7 +247,8 @@
           <span class="text-xs text-slate-500">UPenn Wharton</span>
         </li>
 
-                <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+        <!-- 6. Engineering Project Management -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
           <span class="ttwrap">
             <a href="https://coursera.org/share/b0029247194f943c0947607c5fae7210" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-rice-epm">
               Engineering Project Management
@@ -251,7 +258,8 @@
           <span class="text-xs text-slate-500">Rice University</span>
         </li>
 
-                <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+        <!-- 7. Principles of Leadership: Leading Technical Teams -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
           <span class="ttwrap">
             <a href="https://coursera.org/share/3fbf2d1123e13a441ef11d850513f545" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-cuboulder-plt">
               Principles of Leadership: Leading Technical Teams
@@ -261,7 +269,8 @@
           <span class="text-xs text-slate-500">University of Colorado Boulder</span>
         </li>
 
-                <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+        <!-- 8. Communication Skills for Engineers -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
           <span class="ttwrap">
             <a href="https://coursera.org/share/eec1ffa10e0d86ba7754dc8b134056da" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-rice-commeng">
               Communication Skills for Engineers
@@ -271,7 +280,8 @@
           <span class="text-xs text-slate-500">Rice University</span>
         </li>
 
-                <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+        <!-- 9. Coaching Skills for Managers -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
           <span class="ttwrap">
             <a href="https://coursera.org/share/7ab3e53062281e5f5ea12458b6457e39" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-ucdavis-coach">
               Coaching Skills for Managers
@@ -281,7 +291,8 @@
           <span class="text-xs text-slate-500">UC Davis</span>
         </li>
 
-                <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+        <!-- 10. Chemical Hazards and Process Safety -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
           <span class="ttwrap">
             <a href="https://coursera.org/share/bb7e47eaa14cc254b91d13cb76c8dd8d" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-ucdavis-hazards">
               Chemical Hazards and Process Safety
@@ -291,7 +302,8 @@
           <span class="text-xs text-slate-500">UC Davis</span>
         </li>
 
-                <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+        <!-- 11. Drug Development Product Management -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
           <span class="ttwrap">
             <a href="https://coursera.org/share/d342d191f66f07f37cc46d6df00348a6" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-ucsd-drugdev">
               Drug Development Product Management
@@ -301,7 +313,8 @@
           <span class="text-xs text-slate-500">UC San Diego</span>
         </li>
 
-                <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+        <!-- 12. Python for Everybody -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
           <span class="ttwrap">
             <a href="https://coursera.org/share/1b1dc1695e80a9c37b605d048e87ee2b" target="_blank" rel="noopener" class="link-underline font-medium" data-analytics="cert-umich-python">
               Python for Everybody
@@ -315,7 +328,8 @@
     </div>
   </section>
 
-    <section id="contact" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
+  <!-- Contact -->
+  <section id="contact" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-2xl font-semibold mb-4">Let's connect</h2>
       <p class="text-slate-600 dark:text-slate-300 max-w-lg mx-auto">Reach out about biotech, MSAT, process engineering, or leadership opportunities.</p>
@@ -327,11 +341,13 @@
     </div>
   </section>
 
-    <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-sm text-slate-500 dark:text-slate-400">
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-sm text-slate-500 dark:text-slate-400">
     <p>© <span id="year"></span> Jacob Nichter. All rights reserved. • <a href="https://github.com/jmnichter/jmnichter.github.io" target="_blank" class="link-underline">Source</a></p>
   </footer>
 
-    <script>
+  <!-- Scripts -->
+  <script>
     const storageKey = 'theme';
     const themeToggle = document.getElementById('themeToggle');
     const mobileToggle = document.getElementById('mobileMenuToggle');
