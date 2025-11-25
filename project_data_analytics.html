@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictive Yield Modeling for Bioreactor Optimization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <!-- Project Header -->
+    <header class="max-w-4xl mx-auto mb-8 p-6 bg-white shadow-lg rounded-xl">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-indigo-700 mb-2">
+            Predictive Yield Modeling for Bioreactor Optimization
+        </h1>
+        <p class="text-lg text-gray-600">J. Nichter | Advanced Data Analytics</p>
+    </header>
+
+    <!-- Project Content -->
+    <main class="max-w-4xl mx-auto space-y-10">
+        
+        <!-- The Thesis Section -->
+        <section class="p-6 bg-white shadow-lg rounded-xl">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">The Thesis: The Challenge & The Goal</h2>
+            <p class="text-gray-700 mb-4">
+                The primary manufacturing bottleneck for a key therapeutic was the inherent variability in upstream bioreactor yield. Operators lacked real time insight into how initial batch parameters (feed composition, inoculation density, and temperature profile) would ultimately affect final harvest titer, leading to sub optimal performance and costly re work.
+            </p>
+            <p class="text-gray-700 font-semibold">
+                The goal was to move beyond reactive control to a <strong>predictive state</strong> by designing and deploying an analytical model capable of forecasting final yield with high accuracy ($R^2 > 0.90$) based on data collected within the first 48 hours of the 14-day process.
+            </p>
+        </section>
+
+        <!-- My Role Section -->
+        <section class="p-6 bg-white shadow-lg rounded-xl">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">My Role & Contribution</h2>
+            <p class="text-gray-700 mb-4">
+                I led the <strong>Advanced Data Analytics Initiative</strong>, serving as the technical interface between the Manufacturing Data Platform team and the Process Development scientists.
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                <li class="font-bold">Role: Lead Data Scientist & Chemical Engineering Process Expert</li>
+                <li>Consolidated and cleansed 5 years of historical batch data from disparate sources (LIMS, SCADA) into a single, structured dataset.</li>
+                <li>Engineered over 20 features, transforming raw time series data (e.g., pH slopes, dissolved oxygen integral) into predictive variables.</li>
+                <li>Developed and validated a complex machine learning model (Random Forest Regression) to predict final titer.</li>
+                <li>Deployed the validated model into a live dashboard used by manufacturing supervisors for real time decision support.</li>
+            </ul>
+        </section>
+
+        <!-- Visual Evidence Section -->
+        <section class="p-6 bg-white shadow-lg rounded-xl">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">Visual Evidence & Interpretation</h2>
+
+            <!-- Visual 1 -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold text-indigo-600 mb-3">Model Performance: Actual vs. Predicted Yield</h3>
+                <div class="flex justify-center p-4 bg-gray-50 rounded-lg border">
+                    <!-- Embedded Image 1 - Direct file reference -->
+                    <img 
+                        src="visual_1_yield_model.jpg" 
+                        alt="Scatter plot showing correlation between Actual Bioreactor Yield and Predicted Bioreactor Yield. X-axis: Actual Yield (g/L), Y-axis: Predicted Yield (g/L). A red line represents perfect prediction, and data points cluster closely around it, indicating R-squared = 0.93." 
+                        class="max-w-full h-auto rounded-lg shadow-md"
+                        onerror="this.onerror=null; this.src='https://placehold.co/700x500/808080/FFFFFF?text=Actual+vs.+Predicted+Yield%0AR%5E2=0.93';"
+                    >
+                </div>
+                <p class="mt-3 text-sm text-center text-gray-600">
+                    \textit{Caption:} Comparison of the model's predicted yield against the actual historical yield, confirming high confidence ($R^2=0.93$).
+                </p>
+            </div>
+
+            <!-- Visual 2 -->
+            <div>
+                <h3 class="text-xl font-semibold text-indigo-600 mb-3">Impact on Quality: Reduction in Below Target Batches</h3>
+                <div class="flex justify-center p-4 bg-gray-50 rounded-lg border">
+                    <!-- Embedded Image 2 - Direct file reference -->
+                    <img 
+                        src="visual_2_reduction.jpg" 
+                        alt="Time Series Chart showing the percentage of batches below target yield. The chart clearly indicates a 'Before Model Deployment' phase with an average of 4.5% deviations and an 'After Implementation' phase with a reduced average of 0.9% deviations, demonstrating significant improvement." 
+                        class="max-w-full h-auto rounded-lg shadow-md"
+                        onerror="this.onerror=null; this.src='https://placehold.co/700x500/808080/FFFFFF?text=Below+Target+Batches+Reduction%0ABefore+4.5%25,+After+0.9%25';"
+                    >
+                </div>
+                <p class="mt-3 text-sm text-center text-gray-600">
+                    \textit{Caption:} Time series showing the sharp reduction in batches failing to meet the minimum yield target following the model's implementation.
+                </p>
+            </div>
+        </section>
+        
+        <!-- The Impact Section -->
+        <section class="p-6 bg-white shadow-lg rounded-xl">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">The Impact: Results & Metrics</h2>
+            <p class="text-gray-700 font-semibold mb-3">
+                The successful deployment of the predictive model delivered substantial and measurable value to manufacturing operations:
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                <li><span class="font-bold">Predictive Accuracy:</span> Achieved a model accuracy of $R^2 = 0.93$, allowing for reliable yield forecasting 10 days in advance.</li>
+                <li><span class="font-bold">Waste Reduction:</span> Reduced the incidence of 'Below Target Yield' batches by <strong>60%</strong>, significantly reducing the need for expensive re batches.</li>
+                <li><span class="font-bold">Financial Savings:</span> The ability to prevent deviations through targeted intervention resulted in an estimated <strong>$2.1M in annual savings</strong> based on re batch and raw material costs.</li>
+                <li><span class="font-bold">Process Understanding:</span> The model's feature importance ranking formally quantified the effect of previously qualitative process assumptions.</li>
+            </ul>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="p-6 bg-white shadow-lg rounded-xl">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">Tech Stack & Tools</h2>
+            <ul class="flex flex-wrap gap-4 text-sm text-gray-600">
+                <li class="p-2 bg-indigo-100 rounded-lg">Python (Pandas, NumPy, Scikit Learn)</li>
+                <li class="p-2 bg-indigo-100 rounded-lg">Random Forest Regression</li>
+                <li class="p-2 bg-indigo-100 rounded-lg">Tableau, Jupyter Notebooks</li>
+                <li class="p-2 bg-indigo-100 rounded-lg">LIMS, SCADA systems, Process Data Historians</li>
+            </ul>
+        </section>
+    </main>
+    
+    <!-- Footer for Visual Reference -->
+    <footer class="mt-12 text-center text-xs text-gray-500">
+        <p>This content is designed for easy integration into a professional portfolio website.</p>
+    </footer>
+
+</body>
+</html>
