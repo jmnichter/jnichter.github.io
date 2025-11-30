@@ -1,426 +1,436 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth dark">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- START CHANGE 1: Update site metadata and title tag for new brand identity -->
-  <title>Jacob Nichter — Technical Operations Leader: Digital & Automation Strategy</title>
-  <meta name="description" content="Technical Operations Leader specializing in Digital Manufacturing, Automation, and Process Transformation. Certified LSS Black Belt and PMP focused on data integrity and systems cybersecurity." />
-  <meta property="og:description" content="Certified Lean Six Sigma Black Belt and PMP, leading digital manufacturing transformation, automation scripting, and systems cybersecurity in biotech operations." />
-  <link rel="canonical" href="https://jnichter.com/" />
-  <meta property="og:title" content="Jacob Nichter — Technical Operations Leader" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://jnichter.com" />
-  <meta property="og:image" content="https://jnichter.com/og-card.png" />
-  <meta name="theme-color" content="#0ea5e9" />
-  <link rel="icon" href="/favicon.ico" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- START CHANGE 1: Update site metadata and title tag for new brand identity -->
+  <title>Jacob Nichter — Technical Operations Leader: Digital & Automation Strategy</title>
+  <meta name="description" content="Technical Operations Leader specializing in Digital Manufacturing, Automation, and Process Transformation. Certified LSS Black Belt and PMP focused on data integrity and systems cybersecurity." />
+  <meta property="og:description" content="Certified Lean Six Sigma Black Belt and PMP, leading digital manufacturing transformation, automation scripting, and systems cybersecurity in biotech operations." />
+  <link rel="canonical" href="https://jnichter.com/" />
+  <meta property="og:title" content="Jacob Nichter — Technical Operations Leader" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jnichter.com" />
+  <meta property="og:image" content="https://jnichter.com/og-card.png" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="/favicon.ico" />
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: { sans: ["Inter","system-ui","-apple-system","Segoe UI","Roboto","Helvetica","Arial","sans-serif"] },
-          colors: { brand: { DEFAULT: "#0ea5e9", dark: "#0284c7" } },
-          boxShadow: { soft: "0 10px 30px rgba(2,132,199,.15)", card: "0 10px 25px rgba(0,0,0,.07)" }
-        }
-      }
-    };
-  </script>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter","system-ui","-apple-system","Segoe UI","Roboto","Helvetica,Arial","sans-serif"] },
+          colors: { brand: { DEFAULT: "#0ea5e9", dark: "#0284c7" } },
+          boxShadow: { soft: "0 10px 30px rgba(2,132,199,.15)", card: "0 10px 25px rgba(0,0,0,.07)" }
+        }
+      }
+    };
+  </script>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYTTJTHTTL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JYTTJTHTTL');
-  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYTTJTHTTL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JYTTJTHTTL');
+  </script>
 
-  <style>
-    .hover-float {transition:transform .45s cubic-bezier(.22,.61,.36,1), box-shadow .45s, background-color .3s, border-color .3s}
-    .hover-float:hover {transform:translateY(-6px); box-shadow:0 14px 34px rgba(0,0,0,.10)}
-    .link-underline {background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 2px; transition:background-size .28s ease}
-    .link-underline:hover {background-size:100% 2px}
-    .fade-in {opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease}
-    .fade-in.show {opacity:1; transform:translateY(0)}
-    .ttwrap {position:relative; display:inline-flex; align-items:center}
-    .tt {position:absolute; left:50%; top:100%; margin-top:.5rem; transform:translate(-50%,0) scale(.95); background:rgba(2,6,23,.96); color:#fff; padding:.375rem .5rem; border-radius:.5rem; font-size:.75rem; line-height:1; white-space:nowrap; box-shadow:0 10px 20px rgba(0,0,0,.25); opacity:0; pointer-events:none; transition:opacity .15s, transform .15s; z-index:40}
-    .ttwrap:hover .tt, .ttwrap:focus-within .tt {opacity:1; transform:translate(-50%,0) scale(1)}
-    @media (prefers-reduced-motion: reduce){.hover-float,.link-underline,.fade-in,.tt{transition:none}}
-  </style>
+  <style>
+    .hover-float {transition:transform .45s cubic-bezier(.22,.61,.36,1), box-shadow .45s, background-color .3s, border-color .3s}
+    .hover-float:hover {transform:translateY(-6px); box-shadow:0 14px 34px rgba(0,0,0,.10)}
+    .link-underline {background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 2px; transition:background-size .28s ease}
+    .link-underline:hover {background-size:100% 2px}
+    .fade-in {opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease}
+    .fade-in.show {opacity:1; transform:translateY(0)}
+    .ttwrap {position:relative; display:inline-flex; align-items:center}
+    .tt {position:absolute; left:50%; top:100%; margin-top:.5rem; transform:translate(-50%,0) scale(.95); background:rgba(2,6,23,.96); color:#fff; padding:.375rem .5rem; border-radius:.5rem; font-size:.75rem; line-height:1; white-space:nowrap; box-shadow:0 10px 20px rgba(0,0,0,.25); opacity:0; pointer-events:none; transition:opacity .15s, transform .15s; z-index:40}
+    .ttwrap:hover .tt, .ttwrap:focus-within .tt {opacity:1; transform:translate(-50%,0) scale(1)}
+    @media (prefers-reduced-motion: reduce){.hover-float,.link-underline,.fade-in,.tt{transition:none}}
+    
+    /* Custom style for Featured Badges to maintain uniform height/alignment */
+    .badge-card {
+        min-height: 100%; /* Ensure cards fill grid cell height */
+    }
+  </style>
 </head>
 
 <body class="bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
 
-  <!-- Header -->
-  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-950/60 border-b border-slate-200/60 dark:border-slate-800">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="#home" class="font-semibold tracking-tight text-slate-900 dark:text-white">JN</a>
+  <!-- Header -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-950/60 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#home" class="font-semibold tracking-tight text-slate-900 dark:text-white">JN</a>
 
-      <!-- Desktop nav -->
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#work" class="link-underline">Work</a>
-        <a href="#featured" class="link-underline">Featured</a>
-        <a href="#credentials" class="link-underline">Credentials</a>
-        <a href="#contact" class="link-underline">Contact</a>
-      </nav>
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#work" class="link-underline">Work</a>
+        <a href="#featured" class="link-underline">Featured</a>
+        <a href="#credentials" class="link-underline">Credentials</a>
+        <a href="#contact" class="link-underline">Contact</a>
+      </nav>
 
-      <!-- Theme + mobile toggle -->
-      <div class="flex items-center gap-2">
-        <button id="themeToggle" class="hover-float rounded-xl border px-3 py-2 text-sm border-slate-200 dark:border-slate-800" aria-label="Toggle theme">☀️</button>
-        <button
-          id="mobileMenuToggle"
-          class="md:hidden hover-float rounded-xl border px-3 py-2 text-sm border-slate-200 dark:border-slate-800"
-          aria-label="Toggle navigation menu"
-          aria-controls="mobileMenu"
-          aria-expanded="false"
-        >
-          ☰
-        </button>
-      </div>
-    </div>
+      <!-- Theme + mobile toggle -->
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="hover-float rounded-xl border px-3 py-2 text-sm border-slate-200 dark:border-slate-800" aria-label="Toggle theme">🌙</button>
+        <button
+          id="mobileMenuToggle"
+          class="md:hidden hover-float rounded-xl border px-3 py-2 text-sm border-slate-200 dark:border-slate-800"
+          aria-label="Toggle navigation menu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </div>
 
-    <!-- Mobile nav -->
-    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95">
-      <nav class="px-4 py-3 flex flex-col gap-2 text-sm">
-        <a href="#work" class="py-1 link-underline">Work</a>
-        <a href="#featured" class="py-1 link-underline">Featured</a>
-        <a href="#credentials" class="py-1 link-underline">Credentials</a>
-        <a href="#contact" class="py-1 link-underline">Contact</a>
-      </nav>
-      <!-- END Mobile nav -->
-    </div>
-  </header>
+    <!-- Mobile nav -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95">
+      <nav class="px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="#work" class="py-1 link-underline">Work</a>
+        <a href="#featured" class="py-1 link-underline">Featured</a>
+        <a href="#credentials" class="py-1 link-underline">Credentials</a>
+        <a href="#contact" class="py-1 link-underline">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Hero -->
-  <section id="home" class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50 to-transparent dark:from-sky-900/20"></div>
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center">
-      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Jacob Nichter</h1>
-      <!-- START CHANGE 2: Update Hero Sub-Headline -->
-      <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-        Technical Operations Leader: Driving Digital Manufacturing & Process Transformation. Certified in Lean Six Sigma Black Belt, Automation, and Cybersecurity.
-      </p>
-      <!-- END CHANGE 2 -->
-      <div class="mt-8 flex flex-wrap justify-center gap-3">
-        <a href="Jacob_Nichter_Resume.pdf" target="_blank" rel="noopener" class="hover-float inline-flex items-center rounded-xl bg-brand px-6 py-3 text-white text-base font-medium shadow-soft" data-analytics="resume-hero">📄 View Resume</a>
-        <a href="https://www.linkedin.com/in/jnichter" target="_blank" rel="noopener" class="hover-float inline-flex items-center rounded-xl px-6 py-3 text-base bg-slate-900 text-white dark:bg-white dark:text-slate-900" data-analytics="linkedin-hero">Connect on LinkedIn</a>
-      </div>
-    </div>
-  </section>
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-sky-50 to-transparent dark:from-sky-900/20"></div>
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center">
+      <!-- START Structural Fix: Made header title more prominent -->
+      <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight">Jacob Nichter</h1>
+      <!-- END Structural Fix -->
+      <!-- Updated Hero Sub-Headline -->
+      <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+        Technical Operations Leader: Driving Digital Manufacturing & Process Transformation. Certified in Lean Six Sigma Black Belt, Automation, and Cybersecurity.
+      </p>
+      <!-- End Update -->
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="Jacob_Nichter_Resume.pdf" target="_blank" rel="noopener" class="hover-float inline-flex items-center rounded-xl bg-brand px-6 py-3 text-white text-base font-medium shadow-soft" data-analytics="resume-hero">📄 View Resume</a>
+        <a href="https://www.linkedin.com/in/jnichter" target="_blank" rel="noopener" class="hover-float inline-flex items-center rounded-xl px-6 py-3 text-base bg-slate-900 text-white dark:bg-white dark:text-slate-900" data-analytics="linkedin-hero">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </section>
 
-  <!-- Work -->
-  <section id="work" class="py-16 sm:py-20">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-semibold mb-8">Selected highlights</h2>
-      
-      <!-- Grid updated to 3 columns; cards will wrap naturally if there are 4 -->
-      <div class="grid md:grid-cols-3 gap-6">
+  <!-- Work -->
+  <section id="work" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-semibold mb-8">Selected highlights</h2>
+      
+      <!-- Grid updated to 3 columns; cards will wrap naturally if there are 4 -->
+      <div class="grid md:grid-cols-3 gap-6">
 
-        <!-- Project Card 1: Predictive Yield Modeling -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden hover-float flex flex-col shadow-sm">
-            <a href="project_data_analytics.html" class="block h-48 overflow-hidden relative group">
-                <!-- Using visual_1_yield_model.jpg from root folder -->
-                <img src="visual_1_yield_model.jpg" alt="Predictive Yield Model Scatter Plot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <div class="absolute top-2 right-2 bg-brand text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-md uppercase tracking-wide">
-                    Case Study
-                </div>
-            </a>
-            <div class="p-6 flex-1 flex flex-col">
-                <!-- START CHANGE 3: Update Project 1 Title/Description to emphasize Digital Control -->
-                <h3 class="font-semibold text-lg text-slate-900 dark:text-white leading-tight mb-2">
-                    <a href="project_data_analytics.html" class="hover:text-brand transition-colors">Digital Process Control: Predictive Yield Modeling</a>
-                </h3>
-                <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
-                    Forecasting bioreactor yield with 93% accuracy using Random Forest regression, driving a <strong class="text-slate-800 dark:text-slate-100">$2.1M reduction</strong> in annual waste.
-                </p>
-                <!-- END CHANGE 3 -->
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">Python</span>
-                    <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">SciKit Learn</span>
-                </div>
-                <a href="project_data_analytics.html" class="inline-flex items-center text-brand font-semibold text-sm hover:underline mt-auto group">
-                    View Project <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
-                </a>
-            </div>
-        </article>
+        <!-- Project Card 1: Predictive Yield Modeling -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden hover-float flex flex-col shadow-sm">
+            <a href="project_data_analytics.html" class="block h-48 overflow-hidden relative group">
+                <!-- Using visual_1_yield_model.jpg from root folder -->
+                <img src="visual_1_yield_model.jpg" alt="Predictive Yield Model Scatter Plot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute top-2 right-2 bg-brand text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-md uppercase tracking-wide">
+                    Case Study
+                </div>
+            </a>
+            <div class="p-6 flex-1 flex flex-col">
+                <!-- Update Project 1 Title/Description to emphasize Digital Control -->
+                <h3 class="font-semibold text-lg text-slate-900 dark:text-white leading-tight mb-2">
+                    <a href="project_data_analytics.html" class="hover:text-brand transition-colors">Digital Process Control: Predictive Yield Modeling</a>
+                </h3>
+                <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
+                    Forecasting bioreactor yield with 93% accuracy using Random Forest regression, driving a <strong class="text-slate-800 dark:text-slate-100">$2.1M reduction</strong> in annual waste.
+                </p>
+                <!-- END CHANGE 3 -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">Python</span>
+                    <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">SciKit Learn</span>
+                </div>
+                <a href="project_data_analytics.html" class="inline-flex items-center text-brand font-semibold text-sm hover:underline mt-auto group">
+                    View Project <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                </a>
+            </div>
+        </article>
 
-        <!-- Project Card 2: Accelerated Tech Transfer -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden hover-float flex flex-col shadow-sm">
-            <a href="project_tech_transfer.html" class="block h-48 overflow-hidden relative group">
-                <!-- Using visual_3_tech_transfer.jpg from root folder -->
-                <img src="visual_3_tech_transfer.jpg" alt="Tech Transfer Risk Burndown Chart" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <div class="absolute top-2 right-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-md uppercase tracking-wide">
-                    Case Study
-                </div>
-            </a>
-            <div class="p-6 flex-1 flex flex-col">
-                <!-- START CHANGE 4: Update Project 2 Title/Description to emphasize PMP/Strategic Delivery -->
-                <h3 class="font-semibold text-lg text-slate-900 dark:text-white leading-tight mb-2">
-                    <a href="project_tech_transfer.html" class="hover:text-purple-500 transition-colors">Strategic Project Delivery: Accelerated Tech Transfer</a>
-                </h3>
-                <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
-                    Delivered a 9-month multi-site tech transfer <strong>2 weeks early</strong> and under budget by integrating \textbf{PMP risk management} with CFD modeling.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">Project Mgmt</span>
-                    <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">Scale-Up</span>
-                </div>
-                <!-- END CHANGE 4 -->
-                <a href="project_tech_transfer.html" class="inline-flex items-center text-purple-600 font-semibold text-sm hover:underline mt-auto group">
-                    View Project <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
-                </a>
-            </div>
-        </article>
+        <!-- Project Card 2: Accelerated Tech Transfer -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden hover-float flex flex-col shadow-sm">
+            <a href="project_tech_transfer.html" class="block h-48 overflow-hidden relative group">
+                <!-- Using visual_3_tech_transfer.jpg from root folder -->
+                <img src="visual_3_tech_transfer.jpg" alt="Tech Transfer Risk Burndown Chart" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute top-2 right-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-md uppercase tracking-wide">
+                    Case Study
+                </div>
+            </a>
+            <div class="p-6 flex-1 flex flex-col">
+                <!-- Update Project 2 Title/Description to emphasize PMP/Strategic Delivery -->
+                <h3 class="font-semibold text-lg text-slate-900 dark:text-white leading-tight mb-2">
+                    <a href="project_tech_transfer.html" class="hover:text-purple-500 transition-colors">Strategic Project Delivery: Accelerated Tech Transfer</a>
+                </h3>
+                <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
+                    Delivered a 9-month multi-site tech transfer <strong>2 weeks early</strong> and under budget by integrating <strong>PMP risk management</strong> with CFD modeling.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">Project Mgmt</span>
+                    <span class="px-2 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">Scale-Up</span>
+                </div>
+                <!-- END CHANGE 4 -->
+                <a href="project_tech_transfer.html" class="inline-flex items-center text-purple-600 font-semibold text-sm hover:underline mt-auto group">
+                    View Project <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                </a>
+            </div>
+        </article>
 
-        <!-- Project Card 3: Pilot Plant Manager -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float bg-white dark:bg-slate-950/50">
-          <!-- START CHANGE 5: Update Pilot Plant Manager description to link to systems -->
-          <h3 class="font-semibold">Operational Systems Leadership</h3>
-          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-            Led GMP operations, tech transfers, and improvement initiatives, focusing on MES/DeltaV Automation readiness and data integrity for new systems.
-          </p>
-          <!-- END CHANGE 5 -->
-        </article>
+        <!-- Project Card 3: Pilot Plant Manager -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float bg-white dark:bg-slate-950/50">
+          <!-- Update Pilot Plant Manager description to link to systems -->
+          <h3 class="font-semibold">Operational Systems Leadership</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+            Led GMP operations, tech transfers, and improvement initiatives, focusing on MES/DeltaV Automation readiness and data integrity for new systems.
+          </p>
+          <!-- END CHANGE 5 -->
+        </article>
 
-      </div>
-    </div>
-  </section>
+      </div>
+    </div>
+  </section>
 
-  <!-- Featured -->
-  <section id="featured" class="py-16 sm:py-20">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-semibold">Featured credentials</h2>
-      <!-- START CHANGE 6: Rebuild Featured Credential Grid (6 total items in 2 columns) -->
-      <div class="mt-8 grid md:grid-cols-2 gap-8">
+  <!-- Featured Credentials -->
+  <section id="featured" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-semibold">Featured credentials</h2>
+      <!-- Ensure consistent spacing and layout for 6 custom badge cards -->
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
 
-        <!-- 1. Lean Six Sigma Black Belt (Top Priority) -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6">
-          <a href="https://coursera.org/share/1d9734f636e039f1bd2d0d3aa2b45181" target="_blank" rel="noopener">
-            <img src="Jacob_Nichter_Six_Sigma_Black_Belt.png" width="160" height="160" loading="lazy" alt="Six Sigma Black Belt certificate" class="rounded-xl shadow-md" />
-          </a>
-          <div>
-            <h3 class="font-medium text-lg">Lean Six Sigma Black Belt</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
-              Certified in DMAIC methodology, Lean integration, and advanced statistical methods for quantifiable operational excellence.
-            </p>
-          </div>
-        </article>
+        <!-- 1. Lean Six Sigma Black Belt (Priority #1) -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6 badge-card">
+          <a href="https://coursera.org/share/1d9734f636e039f1bd2d0d3aa2b45181" target="_blank" rel="noopener">
+            <img src="Jacob_Nichter_Six_Sigma_Black_Belt.png" width="80" height="80" loading="lazy" alt="Six Sigma Black Belt certificate" class="rounded-xl shadow-md object-cover" />
+          </a>
+          <div>
+            <h3 class="font-medium text-lg">Lean Six Sigma Black Belt</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
+              Certified in DMAIC methodology, Lean integration, and advanced statistical methods for quantifiable operational excellence.
+            </p>
+          </div>
+        </article>
 
-        <!-- 2. Digital Manufacturing & Design: Industry 4.0 Strategy -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6">
-          <a href="[Link to Digital Manufacturing Certificate]" target="_blank" rel="noopener">
-            <!-- Placeholder badge-custom-1.png (Digital Mfg) -->
-            <img src="badge-custom-1.png" width="160" height="160" loading="lazy" alt="Digital Manufacturing & Design badge" class="rounded-xl shadow-md" />
-          </a>
-          <div>
-            <h3 class="font-medium text-lg">Digital Manufacturing & Design: Industry 4.0 Strategy</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
-              Strategic expertise in factory modernization, the Digital Thread, and IIoT integration for production systems (University at Buffalo).
-            </p>
-          </div>
-        </article>
+        <!-- 2. Digital Manufacturing & Design (Priority #2) -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6 badge-card">
+          <!-- UPDATED LINK: Points to the Coursera Share URL -->
+          <a href="https://coursera.org/share/5987f35ca9a0fe9be0182bf741580fa5" target="_blank" rel="noopener">
+            <!-- UPDATED IMAGE SOURCE: Uses your uploaded .jpg -->
+            <img src="Digital_Mfg_UB.jpg" width="80" height="80" loading="lazy" alt="Digital Manufacturing & Design badge" class="rounded-xl shadow-md object-cover" />
+          </a>
+          <div>
+            <h3 class="font-medium text-lg">Digital Manufacturing & Design: Industry 4.0 Strategy</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
+              Strategic expertise in factory modernization, the Digital Thread, and IIoT integration for production systems (University at Buffalo).
+            </p>
+          </div>
+        </article>
 
-        <!-- 3. IT Automation with Python Professional Certificate -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6">
-          <a href="[Link to Python Automation Certificate]" target="_blank" rel="noopener">
-            <!-- Placeholder badge-custom-2.png (Python Automation) -->
-            <img src="badge-custom-2.png" width="160" height="160" loading="lazy" alt="IT Automation with Python badge" class="rounded-xl shadow-md" />
-          </a>
-          <div>
-            <h3 class="font-medium text-lg">Industrial Automation & Workflow Scripting (Python)</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
-              Expertise in developing production-ready Python scripts for systems integration, data acquisition, and optimizing technical workflows.
-            </p>
-          </div>
-        </article>
+        <!-- 3. IT Automation with Python (Priority #3) -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6 badge-card">
+          <!-- UPDATED to use Credly link -->
+          <a href="https://www.credly.com/badges/a112ee1d-4941-4600-a8b3-e7ad16019658/public_url" target="_blank" rel="noopener">
+            <!-- Updated to use your uploaded file -->
+            <img src="google-it-automation-with-python.png" width="80" height="80" loading="lazy" alt="IT Automation with Python badge" class="rounded-xl shadow-md object-cover" />
+          </a>
+          <div>
+            <h3 class="font-medium text-lg">Industrial Automation & Workflow Scripting (Python)</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
+              Expertise in developing production-ready Python scripts for systems integration, data acquisition, and optimizing technical workflows.
+            </p>
+          </div>
+        </article>
 
-        <!-- 4. Industrial Control System (ICS) Security -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6">
-          <a href="[Link to Cybersecurity Certificate]" target="_blank" rel="noopener">
-            <!-- Placeholder badge-custom-3.png (Cybersecurity) -->
-            <img src="badge-custom-3.png" width="160" height="160" loading="lazy" alt="Industrial Control System Security badge" class="rounded-xl shadow-md" />
-          </a>
-          <div>
-            <h3 class="font-medium text-lg">Industrial Control System (ICS) Security</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
-              Advanced expertise in securing OT infrastructure and managing risk for critical Industrial Control Systems (ICS/SCADA) and MES networks.
-            </p>
-          </div>
-        </article>
+        <!-- 4. Industrial Control System (ICS) Security (Priority #4) -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6 badge-card">
+          <!-- UPDATED to use Credly link -->
+          <a href="https://www.credly.com/badges/08a37fc4-d501-4c7a-95d8-e04db3e0341b/public_url" target="_blank" rel="noopener">
+            <!-- Updated to use your uploaded file -->
+            <img src="google-cybersecurity.png" width="80" height="80" loading="lazy" alt="Industrial Control System Security badge" class="rounded-xl shadow-md object-cover" />
+          </a>
+          <div>
+            <h3 class="font-medium text-lg">Industrial Control System (ICS) Security</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
+              Advanced expertise in securing OT infrastructure and managing risk for critical Industrial Control Systems (ICS/SCADA) and MES networks.
+            </p>
+          </div>
+        </article>
 
-        <!-- 5. Project Management Professional (Combined PMP) -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6">
-          <a href="https://www.credly.com/badges/e9013411-d61d-4310-8358-c239f526d41a/public_url" target="_blank" rel="noopener">
-            <!-- Retaining original badge-1.png for PMP/Success Skills -->
-            <img src="badge-1.png" width="160" height="160" loading="lazy" alt="Google Project Management & Professional Success Skills badge" class="rounded-xl shadow-md" />
-          </a>
-          <div>
-            <h3 class="font-medium text-lg">Professional Project Management (Google)</h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
-              Credentialed in project execution, risk management, and professional communication—bridging engineering leadership with business excellence.
-            </p>
-          </div>
-        </article>
+        <!-- 5. Project Management Professional (Priority #5) -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6 badge-card">
+          <a href="https://www.credly.com/badges/e9013411-d61d-4310-8358-c239f526d41a/public_url" target="_blank" rel="noopener">
+            <!-- Use your existing badge file name here -->
+            <img src="badge-1.png" width="80" height="80" loading="lazy" alt="Google Project Management badge" class="rounded-xl shadow-md object-cover" />
+          </a>
+          <div>
+            <h3 class="font-medium text-lg">Professional Project Management (Google)</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
+              Credentialed in project execution, risk management, and professional communication—bridging engineering leadership with business excellence.
+            </p>
+          </div>
+        </article>
 
-        <!-- 6. B.S. Chemical Engineering (Anchor Credential) -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6">
-          <a href="https://cbe.nd.edu" target="_blank" rel="noopener">
-            <img src="ND_Seal.png" width="160" height="160" loading="lazy" alt="University of Notre Dame Chemical Engineering seal" class="rounded-xl shadow-md object-cover" />
-          </a>
-          <div>
-            <h3 class="font-medium text-lg">
-              <a href="https://cbe.nd.edu" target="_blank" rel="noopener" class="link-underline">
-                B.S. Chemical Engineering
-              </a>
-            </h3>
-            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
-              University of Notre Dame — foundational expertise supporting high-stakes biopharmaceutical manufacturing and data-driven process control.
-            </p>
-          </div>
-        </article>
-      </div>
-      <!-- END CHANGE 6 -->
-    </div>
-  </section>
+        <!-- 6. B.S. Chemical Engineering (Priority #6 - Anchor) -->
+        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover-float flex items-start gap-6 badge-card">
+          <a href="https://cbe.nd.edu" target="_blank" rel="noopener">
+            <!-- Use your existing seal image here -->
+            <img src="ND_Seal.png" width="80" height="80" loading="lazy" alt="University of Notre Dame Chemical Engineering seal" class="rounded-xl shadow-md object-cover" />
+          </a>
+          <div>
+            <h3 class="font-medium text-lg">
+              <a href="https://cbe.nd.edu" target="_blank" rel="noopener" class="link-underline">
+                B.S. Chemical Engineering
+              </a>
+            </h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
+              University of Notre Dame — foundational expertise supporting high-stakes biopharmaceutical manufacturing and data-driven process control.
+            </p>
+          </div>
+        </article>
+      <!-- END Structural Fix -->
+      </div>
+    </div>
+  </section>
 
-  <!-- Credentials -->
-  <!-- START CHANGE 7: Consolidate old individual list -->
-  <section id="credentials" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-semibold">Additional Certifications & Training</h2>
-      <p class="mt-2 text-slate-600 dark:text-slate-300">
-        Extensive training designed to complement a decade of practical experience, covering specialized technical, management, and strategic disciplines.
-      </p>
-      <ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
+  <!-- Credentials -->
+  <!-- Consolidate old individual list -->
+  <section id="credentials" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-semibold">Additional Certifications & Training</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">
+        Extensive training designed to complement a decade of practical experience, covering specialized technical, management, and strategic disciplines.
+      </p>
+      <ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
 
-        <!-- 1. GenAI Strategic Leader (Top of list) -->
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
-          <span class="ttwrap">
-            <span class="link-underline font-medium">Generative AI Strategic Leader</span>
-          </span>
-          <span class="text-xs text-slate-500">Vanderbilt University</span>
-        </li>
+        <!-- 1. GenAI Strategic Leader (Top of list) -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span class="ttwrap">
+            <span class="link-underline font-medium">Generative AI Strategic Leader</span>
+          </span>
+          <span class="text-xs text-slate-500">Vanderbilt University</span>
+        </li>
 
-        <!-- 2. Advanced Data Analytics (Retained for completeness) -->
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
-          <span class="ttwrap">
-            <a href="[Link to Advanced Data Analytics Cert]" target="_blank" rel="noopener" class="link-underline font-medium">Advanced Data Analytics (Google)</a>
-          </span>
-          <span class="text-xs text-slate-500">Google</span>
-        </li>
+        <!-- 2. Advanced Data Analytics (Retained for completeness) -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span class="ttwrap">
+            <a href="[Link to Advanced Data Analytics Cert]" target="_blank" rel="noopener" class="link-underline font-medium">Advanced Data Analytics (Google)</a>
+          </span>
+          <span class="text-xs text-slate-500">Google</span>
+        </li>
         
-        <!-- 3. Engineering Project Management -->
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
-          <span class="ttwrap">
-            <span class="link-underline font-medium">Engineering Project Management</span>
-          </span>
-          <span class="text-xs text-slate-500">Rice University</span>
-        </li>
+        <!-- 3. Engineering Project Management -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span class="ttwrap">
+            <span class="link-underline font-medium">Engineering Project Management</span>
+          </span>
+          <span class="text-xs text-slate-500">Rice University</span>
+        </li>
 
-        <!-- 4. Chemical Hazards and Process Safety (Domain Specific) -->
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
-          <span class="ttwrap">
-            <span class="link-underline font-medium">Chemical Hazards and Process Safety</span>
-          </span>
-          <span class="text-xs text-slate-500">UC Davis</span>
-        </li>
+        <!-- 4. Chemical Hazards and Process Safety (Domain Specific) -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span class="ttwrap">
+            <span class="link-underline font-medium">Chemical Hazards and Process Safety</span>
+          </span>
+          <span class="text-xs text-slate-500">UC Davis</span>
+        </li>
 
-        <!-- 5. Strategic Leadership and Management (Consolidated Leadership) -->
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
-          <span class="ttwrap">
-            <span class="link-underline font-medium">Strategic Leadership and Management</span>
-          </span>
-          <span class="text-xs text-slate-500">University of Illinois</span>
-        </li>
+        <!-- 5. Strategic Leadership and Management (Consolidated Leadership) -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span class="ttwrap">
+            <span class="link-underline font-medium">Strategic Leadership and Management</span>
+          </span>
+          <span class="text-xs text-slate-500">University of Illinois</span>
+        </li>
 
-        <!-- 6. Drug Development Product Management (Industry Niche) -->
-        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
-          <span class="ttwrap">
-            <span class="link-underline font-medium">Drug Development Product Management</span>
-          </span>
-          <span class="text-xs text-slate-500">UC San Diego</span>
-        </li>
+        <!-- 6. Drug Development Product Management (Industry Niche) -->
+        <li class="rounded-xl border border-slate-200 dark:border-slate-800 p-4 hover-float flex items-center justify-between">
+          <span class="ttwrap">
+            <span class="link-underline font-medium">Drug Development Product Management</span>
+          </span>
+          <span class="text-xs text-slate-500">UC San Diego</span>
+        </li>
 
-      </ul>
-    </div>
-  </section>
-  <!-- END CHANGE 7 -->
+      </ul>
+    </div>
+  </section>
+  <!-- END CHANGE 7 -->
 
-  <!-- Contact -->
-  <section id="contact" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-2xl font-semibold mb-4">Let's connect</h2>
-      <p class="text-slate-600 dark:text-slate-300 max-w-lg mx-auto">Reach out about biotech, MSAT, process engineering, or leadership opportunities.</p>
-      <div class="mt-6 flex flex-wrap justify-center gap-4 text-sm">
-        <a href="mailto:jacob@jnichter.com" class="hover-float rounded-xl border border-slate-200 dark:border-slate-800 px-5 py-2 link-underline">jacob@jnichter.com</a>
-        <a href="https://www.linkedin.com/in/jnichter" target="_blank" rel="noopener" class="hover-float rounded-xl border border-slate-200 dark:border-slate-800 px-5 py-2 link-underline">LinkedIn</a>
-        <a href="Jacob_Nichter_Resume.pdf" target="_blank" rel="noopener" class="hover-float rounded-xl border border-slate-200 dark:border-slate-800 px-5 py-2 link-underline">Resume (PDF)</a>
-      </div>
-    </div>
-  </section>
+  <!-- Contact -->
+  <section id="contact" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-900/40">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-semibold mb-4">Let's connect</h2>
+      <p class="text-slate-600 dark:text-slate-300 max-w-lg mx-auto">Reach out about biotech, MSAT, process engineering, or leadership opportunities.</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-4 text-sm">
+        <a href="mailto:jacob@jnichter.com" class="hover-float rounded-xl border border-slate-200 dark:border-slate-800 px-5 py-2 link-underline">jacob@jnichter.com</a>
+        <a href="https://www.linkedin.com/in/jnichter" target="_blank" rel="noopener" class="hover-float rounded-xl border border-slate-200 dark:border-slate-800 px-5 py-2 link-underline">LinkedIn</a>
+        <a href="Jacob_Nichter_Resume.pdf" target="_blank" rel="noopener" class="hover-float rounded-xl border border-slate-200 dark:border-slate-800 px-5 py-2 link-underline">Resume (PDF)</a>
+      </div>
+    </div>
+  </section>
 
-  <!-- Footer -->
-  <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-sm text-slate-500 dark:text-slate-400">
-    <p>© <span id="year"></span> Jacob Nichter. All rights reserved. • <a href="https://github.com/jmnichter/jmnichter.github.io" target="_blank" class="link-underline">Source</a></p>
-  </footer>
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-sm text-slate-500 dark:text-slate-400">
+    <p>© <span id="year"></span> Jacob Nichter. All rights reserved. • <a href="https://github.com/jmnichter/jmnichter.github.io" target="_blank" class="link-underline">Source</a></p>
+  </footer>
 
-  <!-- Scripts -->
-  <script>
-    const storageKey = 'theme';
-    const themeToggle = document.getElementById('themeToggle');
-    const mobileToggle = document.getElementById('mobileMenuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const root = document.documentElement;
+  <!-- Scripts -->
+  <script>
+    const storageKey = 'theme';
+    const themeToggle = document.getElementById('themeToggle');
+    const mobileToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const root = document.documentElement;
 
-    function setTheme(t){
-      if(t==='dark'||t===null){
-        root.classList.add('dark');
-        themeToggle.textContent='🌙'; // Change icon to moon for light mode
-      } else {
-        root.classList.remove('dark');
-        themeToggle.textContent='☀️'; // Change icon to sun for dark mode
-      }
-    }
+    function setTheme(t){
+      if(t==='dark'||t===null){
+        root.classList.add('dark');
+        themeToggle.textContent='🌙'; 
+      } else {
+        root.classList.remove('dark');
+        themeToggle.textContent='☀️'; 
+      }
+    }
 
-    const stored = localStorage.getItem(storageKey);
-    setTheme(stored);
+    const stored = localStorage.getItem(storageKey);
+    setTheme(stored);
 
-    themeToggle?.addEventListener('click', ()=>{
-      const next = root.classList.contains('dark') ? 'light' : 'dark';
-      localStorage.setItem(storageKey, next);
-      setTheme(next);
-    });
+    themeToggle?.addEventListener('click', ()=>{
+      const next = root.classList.contains('dark') ? 'light' : 'dark';
+      localStorage.setItem(storageKey, next);
+      setTheme(next);
+    });
 
-    mobileToggle?.addEventListener('click', () => {
-      const isHidden = mobileMenu.classList.contains('hidden');
-      if (isHidden) {
-        mobileMenu.classList.remove('hidden');
-        mobileToggle.setAttribute('aria-expanded', 'true');
-      } else {
-        mobileMenu.classList.add('hidden');
-        mobileToggle.setAttribute('aria-expanded', 'false');
-      }
-    });
+    mobileToggle?.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        mobileToggle.setAttribute('aria-expanded', 'true');
+      } else {
+        mobileMenu.classList.add('hidden');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
 
-    mobileMenu?.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        mobileToggle.setAttribute('aria-expanded', 'false');
-      });
-    });
+    mobileMenu?.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
 
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('show'); });
-    }, { threshold: 0.15 });
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('show'); });
+    }, { threshold: 0.15 });
 
-    document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
-  </script>
+    document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+  </script>
 
 </body>
 </html>
