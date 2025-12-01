@@ -31,7 +31,7 @@
           colors: { brand: { DEFAULT: "#0ea5e9", dark: "#0284c7" } },
           boxShadow: { soft: "0 10px 30px rgba(2,132,199,.15)", card: "0 10px 25px rgba(0,0,0,.07)" },
           animation: {
-            'gradient-x': 'gradient-x 8s ease infinite', // Sped up to 8s for visibility
+            'gradient-x': 'gradient-x 8s ease infinite',
           },
           keyframes: {
             'gradient-x': {
@@ -105,7 +105,7 @@
 
 <body class="bg-gradient-to-br from-blue-50 via-indigo-100 to-sky-100 dark:from-slate-950 dark:via-blue-950 dark:to-slate-900 animate-gradient bg-[length:400%_400%] text-slate-900 antialiased dark:text-slate-100 min-h-screen">
 
-  <header class="sticky top-0 z-40 backdrop-blur-md bg-white/70 dark:bg-slate-950/60 border-b border-slate-200/60 dark:border-slate-800">
+  <header class="sticky top-0 z-40 backdrop-blur-lg bg-white/10 dark:bg-slate-950/20 border-b border-white/20 dark:border-white/5">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#home" class="font-semibold tracking-tight text-slate-900 dark:text-white">JN</a>
 
@@ -117,10 +117,10 @@
       </nav>
 
       <div class="flex items-center gap-2">
-        <button id="themeToggle" class="hover-float rounded-xl border px-3 py-2 text-sm border-slate-200 dark:border-slate-800" aria-label="Toggle theme">🌙</button>
+        <button id="themeToggle" class="hover-float rounded-xl border px-3 py-2 text-sm border-white/20 dark:border-white/10" aria-label="Toggle theme">🌙</button>
         <button
           id="mobileMenuToggle"
-          class="md:hidden hover-float rounded-xl border px-3 py-2 text-sm border-slate-200 dark:border-slate-800"
+          class="md:hidden hover-float rounded-xl border px-3 py-2 text-sm border-white/20 dark:border-white/10"
           aria-label="Toggle navigation menu"
           aria-controls="mobileMenu"
           aria-expanded="false"
@@ -130,7 +130,7 @@
       </div>
     </div>
 
-    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95">
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10 dark:border-white/5 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl">
       <nav class="px-4 py-3 flex flex-col gap-2 text-sm">
         <a href="#work" class="py-1 link-underline">Work</a>
         <a href="#featured" class="py-1 link-underline">Featured</a>
