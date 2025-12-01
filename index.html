@@ -18,7 +18,7 @@
   
   <link rel="canonical" href="https://jnichter.com/" />
   
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50' y='70' font-family='sans-serif' font-size='55' font-weight='bold' text-anchor='middle' fill='%230ea5e9'>JN</text></svg>" />
   <meta name="theme-color" content="#0ea5e9" />
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -49,6 +49,8 @@
       }
     };
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYTTJTHTTL"></script>
   <script>
@@ -142,7 +144,6 @@
 
   <section id="home" class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-white/30 dark:to-black/30 pointer-events-none"></div>
-    
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center">
       <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight">Jacob Nichter</h1>
       
@@ -154,6 +155,18 @@
       <div class="mt-8 flex flex-wrap justify-center gap-3">
         <a href="Jacob_Nichter_Resume.pdf" target="_blank" rel="noopener" class="hover-float inline-flex items-center rounded-xl bg-brand px-6 py-3 text-white text-base font-medium shadow-soft" data-analytics="resume-hero">📄 View Resume</a>
         <a href="https://www.linkedin.com/in/jnichter" target="_blank" rel="noopener" class="hover-float inline-flex items-center rounded-xl px-6 py-3 text-base bg-slate-900 text-white dark:bg-white dark:text-slate-900" data-analytics="linkedin-hero">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-12">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-8 shadow-sm">
+        <h2 class="text-xl font-semibold text-center mb-6">Technical Proficiency</h2>
+        <div class="w-full max-w-md mx-auto relative h-64 sm:h-80">
+          <canvas id="skillsChart"></canvas>
+        </div>
+        <p class="text-center text-xs text-slate-500 mt-4">Data-driven leadership across the biotech product lifecycle.</p>
       </div>
     </div>
   </section>
@@ -515,6 +528,56 @@
     }
 
     typingEffect();
+
+    // Radar Chart
+    document.addEventListener("DOMContentLoaded", function() {
+      const ctx = document.getElementById('skillsChart').getContext('2d');
+      // Detect if dark mode is active for chart colors
+      const isDark = document.documentElement.classList.contains('dark');
+      const textColor = isDark ? '#e2e8f0' : '#475569';
+      const gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
+
+      new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels: ['Process Engineering', 'Data Science & Python', 'GMP Automation', 'Lean Six Sigma', 'Project Leadership', 'Cybersecurity'],
+          datasets: [{
+            label: 'Competency Level',
+            data: [95, 85, 90, 95, 90, 75],
+            fill: true,
+            backgroundColor: 'rgba(14, 165, 233, 0.2)', // Brand Blue transparent
+            borderColor: '#0ea5e9',
+            pointBackgroundColor: '#0ea5e9',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: '#0ea5e9'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          elements: {
+            line: { borderWidth: 3 }
+          },
+          scales: {
+            r: {
+              angleLines: { color: gridColor },
+              grid: { color: gridColor },
+              pointLabels: {
+                color: textColor,
+                font: { size: 12, family: "'Inter', sans-serif" }
+              },
+              ticks: { display: false, backdropColor: 'transparent' },
+              suggestedMin: 0,
+              suggestedMax: 100
+            }
+          },
+          plugins: {
+            legend: { display: false }
+          }
+        }
+      });
+    });
   </script>
 
 </body>
