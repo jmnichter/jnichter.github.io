@@ -542,7 +542,8 @@
       const ctx = document.getElementById('skillsChart').getContext('2d');
       // Detect if dark mode is active for chart colors
       const isDark = document.documentElement.classList.contains('dark');
-      const textColor = isDark ? '#e2e8f0' : '#475569';
+      // **FIXED COLOR CONTRAST FOR LIGHT MODE**
+      const textColor = isDark ? '#e2e8f0' : '#1e293b'; 
       const gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
 
       new Chart(ctx, {
