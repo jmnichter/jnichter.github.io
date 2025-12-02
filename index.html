@@ -18,7 +18,9 @@
   
   <link rel="canonical" href="https://jnichter.com/" />
   
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50' y='70' font-family='sans-serif' font-size='55' font-weight='bold' text-anchor='middle' fill='%230ea5e9'>JN</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50' y='70' font-family='sans-serif' font-size='55' font-weight='bold' text-anchor='middle' fill='%230ea5e9'>JN</text></svg>" />
+  <link rel="icon" type="image/png" href="/og-card.png" />
+  
   <meta name="theme-color" content="#0ea5e9" />
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -71,6 +73,13 @@
     .tt {position:absolute; left:50%; top:100%; margin-top:.5rem; transform:translate(-50%,0) scale(.95); background:rgba(2,6,23,.96); color:#fff; padding:.375rem .5rem; border-radius:.5rem; font-size:.75rem; line-height:1; white-space:nowrap; box-shadow:0 10px 20px rgba(0,0,0,.25); opacity:0; pointer-events:none; transition:opacity .15s, transform .15s; z-index:40}
     .ttwrap:hover .tt, .ttwrap:focus-within .tt {opacity:1; transform:translate(-50%,0) scale(1)}
     
+    /* SCROLL SPY ACTIVE STATE */
+    .desktop-nav a.active {
+        color: #0ea5e9; /* Brand Blue */
+        font-weight: 600; 
+        background-size: 100% 2px;
+    }
+
     /* Typewriter Cursor */
     .cursor { display: inline-block; width: 2px; background-color: currentColor; animation: blink 1s step-end infinite; }
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
@@ -111,7 +120,9 @@
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="#home" class="font-semibold tracking-tight text-slate-900 dark:text-white">JN</a>
 
-      <nav class="hidden md:flex items-center gap-6 text-sm">
+      <nav id="desktop-nav" class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#home" class="link-underline active">Home</a>
+        <a href="#skills" class="link-underline">Skills</a>
         <a href="#work" class="link-underline">Work</a>
         <a href="#featured" class="link-underline">Featured</a>
         <a href="#credentials" class="link-underline">Credentials</a>
@@ -174,7 +185,8 @@
   <section id="work" class="py-16 sm:py-20">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl font-semibold mb-8">Selected highlights</h2>
-      <div class="grid md:grid-cols-3 gap-6">
+      
+      <div class="grid md:grid-cols-2 gap-6">
 
         <article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md overflow-hidden hover-float flex flex-col shadow-sm">
             <a href="project_data_analytics.html" class="block h-48 overflow-hidden relative group">
@@ -220,11 +232,19 @@
             </div>
         </article>
 
-        <article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-6 hover-float">
-          <h3 class="font-semibold">Operational Systems Leadership</h3>
-          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-            Led GMP operations, tech transfers, and improvement initiatives, focusing on MES/DeltaV Automation readiness and data integrity for new systems.
-          </p>
+        <article class="md:col-span-2 rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-8 hover-float flex flex-col md:flex-row items-center gap-8 shadow-sm">
+          <div class="flex-1">
+            <h3 class="font-semibold text-xl text-slate-900 dark:text-white">Operational Systems Leadership</h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-300 leading-relaxed">
+              Led GMP operations, tech transfers, and improvement initiatives, focusing on MES/DeltaV Automation readiness and data integrity for new systems. Championed cross-functional alignment between engineering, quality, and manufacturing operations to ensure Right-First-Time execution.
+            </p>
+          </div>
+          <div class="hidden md:block text-slate-200 dark:text-slate-800 opacity-30">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24">
+              <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+              <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clip-rule="evenodd" />
+            </svg>
+          </div>
         </article>
 
       </div>
@@ -540,9 +560,7 @@
     // Radar Chart
     document.addEventListener("DOMContentLoaded", function() {
       const ctx = document.getElementById('skillsChart').getContext('2d');
-      // Detect if dark mode is active for chart colors
       const isDark = document.documentElement.classList.contains('dark');
-      // **FIXED COLOR CONTRAST FOR LIGHT MODE**
       const textColor = isDark ? '#e2e8f0' : '#1e293b'; 
       const gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
 
@@ -554,7 +572,7 @@
             label: 'Competency Level',
             data: [95, 85, 90, 95, 90, 75],
             fill: true,
-            backgroundColor: 'rgba(14, 165, 233, 0.2)', // Brand Blue transparent
+            backgroundColor: 'rgba(14, 165, 233, 0.2)',
             borderColor: '#0ea5e9',
             pointBackgroundColor: '#0ea5e9',
             pointBorderColor: '#fff',
@@ -585,6 +603,33 @@
             legend: { display: false }
           }
         }
+      });
+    });
+
+    // Scroll Spy Logic
+    document.addEventListener("DOMContentLoaded", function() {
+      const navLinks = document.querySelectorAll('#desktop-nav a');
+      const sections = document.querySelectorAll('section[id]');
+      
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const id = entry.target.getAttribute('id');
+          const navLink = document.querySelector(`#desktop-nav a[href="#${id}"]`);
+          
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            if (navLink) {
+              navLink.classList.add('active');
+            }
+          }
+        });
+      }, { 
+        threshold: 0.3,
+        rootMargin: "-100px 0px -100px 0px"
+      });
+
+      sections.forEach(section => {
+        observer.observe(section);
       });
     });
   </script>
