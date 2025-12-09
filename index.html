@@ -1,635 +1,288 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth dark">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Jacob Nichter — Manufacturing Project Manager | Technical Operations Leader</title>
+  
+  <meta name="description" content="Manufacturing Project Manager and Lean Six Sigma Black Belt specializing in Capital Projects, Tech Transfer, and Digital Operations in Biopharma (cGMP)." />
+  
+  <meta name="keywords" content="Manufacturing Project Manager, Technical Operations, Lean Six Sigma, Automation, GMP, Biopharma, Project Management, PMP" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jnichter.com/" />
+  <meta property="og:title" content="Jacob Nichter — Manufacturing Project Manager" />
+  <meta property="og:description" content="Technical Operations Leader specializing in Capital Projects, Tech Transfer, and Process Optimization." />
+  <meta property="og:image" content="https://jnichter.com/og-card.png" />
+  
+  <link rel="canonical" href="https://jnichter.com/" />
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50' y='70' font-family='sans-serif' font-size='55' font-weight='bold' text-anchor='middle' fill='%230ea5e9'>JN</text></svg>" />
+  <link rel="icon" type="image/png" href="/og-card.png" />
+  
+  <meta name="theme-color" content="#0ea5e9" />
 
-<title>Jacob Nichter — Manufacturing Project Manager | Technical Operations Leader</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter","system-ui","-apple-system","Segoe UI","Roboto","Helvetica","Arial","sans-serif"] },
+          colors: { brand: { DEFAULT: "#0ea5e9", dark: "#0284c7" } },
+          boxShadow: { soft: "0 10px 30px rgba(2,132,199,.15)", card: "0 10px 25px rgba(0,0,0,.07)" },
+          animation: {
+            'gradient-x': 'gradient-x 8s ease infinite',
+          },
+          keyframes: {
+            'gradient-x': {
+              '0%, 100%': {
+                'background-size': '200% 200%',
+                'background-position': 'left center'
+              },
+              '50%': {
+                'background-size': '200% 200%',
+                'background-position': 'right center'
+              },
+            },
+          }
+        }
+      }
+    };
+  </script>
 
-<meta name="description" content="Manufacturing Project Manager and Lean Six Sigma Black Belt specializing in Capital Projects, Tech Transfer, and Digital Operations in Biopharma (cGMP)." />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<meta name="keywords" content="Manufacturing Project Manager, Technical Operations, Lean Six Sigma, Automation, GMP, Biopharma, Project Management, PMP" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYTTJTHTTL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JYTTJTHTTL');
+  </script>
 
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://jnichter.com/" />
-<meta property="og:title" content="Jacob Nichter — Manufacturing Project Manager" />
-<meta property="og:description" content="Technical Operations Leader specializing in Capital Projects, Tech Transfer, and Process Optimization." />
-<meta property="og:image" content="https://jnichter.com/og-card.png" />
+  <style>
+    .hover-float {transition:transform .45s cubic-bezier(.22,.61,.36,1), box-shadow .45s, background-color .3s, border-color .3s}
+    .hover-float:hover {transform:translateY(-6px); box-shadow:0 14px 34px rgba(0,0,0,.10)}
+    .link-underline {background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 2px; transition:background-size .28s ease}
+    .link-underline:hover {background-size:100% 2px}
+    .fade-in {opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease}
+    .fade-in.show {opacity:1; transform:translateY(0)}
+    .ttwrap {position:relative; display:inline-flex; align-items:center}
+    .tt {position:absolute; left:50%; top:100%; margin-top:.5rem; transform:translate(-50%,0) scale(.95); background:rgba(2,6,23,.96); color:#fff; padding:.375rem .5rem; border-radius:.5rem; font-size:.75rem; line-height:1; white-space:nowrap; box-shadow:0 10px 20px rgba(0,0,0,.25); opacity:0; pointer-events:none; transition:opacity .15s, transform .15s; z-index:40}
+    .ttwrap:hover .tt, .ttwrap:focus-within .tt {opacity:1; transform:translate(-50%,0) scale(1)}
+    /* MINIMAL CSS FIX FOR IMAGE STABILITY */
+    img { max-width: 100%; height: auto; }
+    
+    /* SCROLL SPY ACTIVE STATE */
+    .desktop-nav a.active {
+        color: #0ea5e9; /* Brand Blue */
+        font-weight: 600; 
+        background-size: 100% 2px;
+    }
 
-<link rel="canonical" href="https://jnichter.com/" />
+    /* Typewriter Cursor */
+    .cursor { display: inline-block; width: 2px; background-color: currentColor; animation: blink 1s step-end infinite; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50' y='70' font-family='sans-serif' font-size='55' font-weight='bold' text-anchor='middle' fill='%230ea5e9'>JN</text></svg>" />
-<link rel="icon" type="image/png" href="/og-card.png" />
+    @media (prefers-reduced-motion: reduce){.hover-float,.link-underline,.fade-in,.tt,.animate-gradient{transition:none; animation:none;}}
+    .badge-card { min-height: 100%; }
+  </style>
 
-<meta name="theme-color" content="#0ea5e9" />
-
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = {
-darkMode: 'class',
-theme: {
-extend: {
-fontFamily: { sans: ["Inter","system-ui","-apple-system","Segoe UI","Roboto","Helvetica","Arial","sans-serif"] },
-colors: { brand: { DEFAULT: "#0ea5e9", dark: "#0284c7" } },
-boxShadow: { soft: "0 10px 30px rgba(2,132,199,.15)", card: "0 10px 25px rgba(0,0,0,.07)" },
-animation: {
-'gradient-x': 'gradient-x 8s ease infinite',
-},
-keyframes: {
-'gradient-x': {
-'0%, 100%': {
-'background-size': '200% 200%',
-'background-position': 'left center'
-},
-'50%': {
-'background-size': '200% 200%',
-'background-position': 'right center'
-},
-},
-}
-}
-}
-};
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYTTJTHTTL"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-JYTTJTHTTL');
-</script>
-
-<style>
-.hover-float {transition:transform .45s cubic-bezier(.22,.61,.36,1), box-shadow .45s, background-color .3s, border-color .3s}
-.hover-float:hover {transform:translateY(-6px); box-shadow:0 14px 34px rgba(0,0,0,.10)}
-.link-underline {background-image:linear-gradient(currentColor,currentColor); background-position:0 100%; background-repeat:no-repeat; background-size:0% 2px; transition:background-size .28s ease}
-.link-underline:hover {background-size:100% 2px}
-.fade-in {opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease}
-.fade-in.show {opacity:1; transform:translateY(0)}
-.ttwrap {position:relative; display:inline-flex; align-items:center}
-.tt {position:absolute; left:50%; top:100%; margin-top:.5rem; transform:translate(-50%,0) scale(.95); background:rgba(2,6,23,.96); color:#fff; padding:.375rem .5rem; border-radius:.5rem; font-size:.75rem; line-height:1; white-space:nowrap; box-shadow:0 10px 20px rgba(0,0,0,.25); opacity:0; pointer-events:none; transition:opacity .15s, transform .15s; z-index:40}
-.ttwrap:hover .tt, .ttwrap:focus-within .tt {opacity:1; transform:translate(-50%,0) scale(1)}
-
-/* SCROLL SPY ACTIVE STATE */
-.desktop-nav a.active {
-color: #0ea5e9; /* Brand Blue */
-font-weight: 600; 
-background-size: 100% 2px;
-}
-
-/* Typewriter Cursor */
-.cursor { display: inline-block; width: 2px; background-color: currentColor; animation: blink 1s step-end infinite; }
-@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-
-@media (prefers-reduced-motion: reduce){.hover-float,.link-underline,.fade-in,.tt,.animate-gradient{transition:none; animation:none;}}
-.badge-card { min-height: 100%; }
-</style>
-
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "Person",
-"name": "Jacob Nichter",
-"url": "https://jnichter.com",
-"jobTitle": "Manufacturing Project Manager",
-"worksFor": {
-"@type": "Organization",
-"name": "Biotech Industry"
-},
-"alumniOf": [
-{
-"@type": "CollegeOrUniversity",
-"name": "University of Notre Dame"
-}
-],
-"sameAs": [
-"https://www.linkedin.com/in/jnichter",
-"https://github.com/jmnichter"
-],
-"knowsAbout": ["Project Management", "Tech Transfer", "Lean Six Sigma", "Validation", "GMP Manufacturing", "Process Engineering"]
-}
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jacob Nichter",
+    "url": "https://jnichter.com",
+    "jobTitle": "Manufacturing Project Manager",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Biotech Industry"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Notre Dame"
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/jnichter",
+      "https://github.com/jmnichter",
+      "https://linkedin.com/company/nichter-digital" 
+    ],
+    "knowsAbout": ["Project Management", "Tech Transfer", "Lean Six Sigma", "Validation", "GMP Manufacturing", "Process Engineering"]
+  }
+  </script>
 </head>
 
 <body class="bg-gradient-to-br from-blue-50 via-indigo-100 to-sky-100 dark:from-slate-950 dark:via-blue-950 dark:to-slate-900 animate-gradient bg-[length:400%_400%] text-slate-900 antialiased dark:text-slate-100 min-h-screen">
 
-<header class="sticky top-0 z-40 backdrop-blur-lg bg-white/5 dark:bg-slate-950/5 border-b border-transparent">
-<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-<a href="#home" class="font-semibold tracking-tight text-slate-900 dark:text-white">JN</a>
+  <header class="sticky top-0 z-40 backdrop-blur-lg bg-white/5 dark:bg-slate-950/5 border-b border-transparent">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#home" class="font-semibold tracking-tight text-slate-900 dark:text-white">JN</a>
 
-<nav id="desktop-nav" class="hidden md:flex items-center gap-6 text-sm">
-<a href="#home" class="link-underline active">Home</a>
-<a href="#skills" class="link-underline">Skills</a>
-<a href="#work" class="link-underline">Work</a>
-<a href="#featured" class="link-underline">Featured</a>
-<a href="#credentials" class="link-underline">Credentials</a>
-<a href="https://jnichter.gumroad.com" target="_blank" rel="noopener" class="link-underline text-brand dark:text-brand font-medium">Resources ↗</a>
-<a href="#contact" class="link-underline">Contact</a>
-</nav>
+      <nav id="desktop-nav" class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#home" class="link-underline active">Home</a>
+        <a href="#skills" class="link-underline">Skills</a>
+        <a href="#work" class="link-underline">Work</a>
+        <a href="#featured" class="link-underline">Featured</a>
+        <a href="#credentials" class="link-underline">Credentials</a>
+                <a href="https://linkedin.com/company/nichter-digital" target="_blank" rel="noopener" class="link-underline text-brand dark:text-brand font-medium">ND Community ↗</a>
+        <a href="#contact" class="link-underline">Contact</a>
+      </nav>
 
-<div class="flex items-center gap-2">
-<button id="themeToggle" class="hover-float rounded-xl border px-3 py-2 text-sm border-white/20 dark:border-white/10" aria-label="Toggle theme">🌙</button>
-<button
-id="mobileMenuToggle"
-class="md:hidden hover-float rounded-xl border px-3 py-2 text-sm border-white/20 dark:border-white/10"
-aria-label="Toggle navigation menu"
-aria-controls="mobileMenu"
-aria-expanded="false"
->
-☰
-</button>
-</div>
-</div>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="hover-float rounded-xl border px-3 py-2 text-sm border-white/20 dark:border-white/10" aria-label="Toggle theme">🌙</button>
+        <button
+          id="mobileMenuToggle"
+          class="md:hidden hover-float rounded-xl border px-3 py-2 text-sm border-white/20 dark:border-white/10"
+          aria-label="Toggle navigation menu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
 
-<div id="mobileMenu" class="md:hidden hidden border-t border-white/10 dark:border-white/5 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl">
-<nav class="px-4 py-3 flex flex-col gap-2 text-sm">
-<a href="#work" class="py-1 link-underline">Work</a>
-<a href="#featured" class="py-1 link-underline">Featured</a>
-<a href="#credentials" class="py-1 link-underline">Credentials</a>
-<a href="https://jnichter.gumroad.com" target="_blank" rel="noopener" class="py-1 link-underline text-brand">Resources</a>
-<a href="#contact" class="py-1 link-underline">Contact</a>
-</nav>
-</div>
-</header>
+    </div>
 
-<section id="home" class="relative overflow-hidden">
-<div class="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-white/30 dark:to-black/30 pointer-events-none"></div>
-<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center">
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10 dark:border-white/5 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl">
+      <nav class="px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="#work" class="py-1 link-underline">Work</a>
+        <a href="#featured" class="py-1 link-underline">Featured</a>
+        <a href="#credentials" class="py-1 link-underline">Credentials</a>
+                <a href="https://linkedin.com/company/nichter-digital" target="_blank" rel="noopener" class="py-1 link-underline text-brand">ND Community</a>
+        <a href="#contact" class="py-1 link-underline">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="mb-8 relative inline-block">
-<div class="absolute inset-0 bg-brand blur-2xl opacity-20 rounded-full"></div>
-<img src="Jacob_Nichter_Professional_Photo.jpg" 
-alt="Jacob Nichter" 
-class="relative w-32 h-32 mx-auto rounded-full border-4 border-white dark:border-slate-800 shadow-2xl hover-float object-cover bg-white" />
-</div>
-<h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight">Jacob Nichter</h1>
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-white/30 dark:to-black/30 pointer-events-none"></div>
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center">
+      
+      <div class="mb-8 relative inline-block">
+        <div class="absolute inset-0 bg-brand blur-2xl opacity-20 rounded-full"></div>
+        <img src="Jacob_Nichter_Professional_Photo.jpg" 
+             alt="Jacob Nichter" 
+             class="relative w-32 h-32 mx-auto rounded-full border-4 border-white dark:border-slate-800 shadow-2xl hover-float object-cover bg-white" />
+      </div>
+      <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight">Jacob Nichter</h1>
+      
+      <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto h-20 sm:h-12">
+        Manufacturing Project Manager driving 
+        <span id="typewriter" class="text-brand font-bold"></span><span class="cursor">|</span>
+      </p>
+      
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="Jacob_Nichter_Resume.pdf" target="_blank" rel="noopener" class="hover-float inline-flex items-center rounded-xl bg-brand px-6 py-3 text-white text-base font-medium shadow-soft" data-analytics="resume-hero">📄 View Resume</a>
+        <a href="https://www.linkedin.com/in/jnichter" target="_blank" rel="noopener" class="hover-float inline-flex items-center rounded-xl px-6 py-3 text-base bg-slate-900 text-white dark:bg-white dark:text-slate-900" data-analytics="linkedin-hero">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </section>
 
-<p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto h-20 sm:h-12">
-Manufacturing Project Manager driving 
-<span id="typewriter" class="text-brand font-bold"></span><span class="cursor">|</span>
-</p>
+  <section id="skills" class="py-12">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-8 shadow-sm">
+        <h2 class="text-xl font-semibold text-center mb-6">Technical Proficiency</h2>
+        <div class="w-full max-w-md mx-auto relative h-64 sm:h-80">
+          <canvas id="skillsChart"></canvas>
+        </div>
+        <p class="text-center text-xs text-slate-500 mt-4">Data-driven leadership across the project lifecycle.</p>
+      </div>
+    </div>
+  </section>
 
-<div class="mt-8 flex flex-wrap justify-center gap-3">
-<a href="Jacob_Nichter_Resume.pdf" target="_blank" rel="noopener" class="hover-float inline-flex items-center rounded-xl bg-brand px-6 py-3 text-white text-base font-medium shadow-soft" data-analytics="resume-hero">📄 View Resume</a>
-<a href="https://www.linkedin.com/in/jnichter" target="_blank" rel="noopener" class="hover-float inline-flex items-center rounded-xl px-6 py-3 text-base bg-slate-900 text-white dark:bg-white dark:text-slate-900" data-analytics="linkedin-hero">Connect on LinkedIn</a>
-</div>
-</div>
-</section>
+  <section id="work" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-semibold mb-8">Selected highlights</h2>
+      
+      <div class="grid md:grid-cols-2 gap-6">
 
-<section id="skills" class="py-12">
-<div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-<div class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-8 shadow-sm">
-<h2 class="text-xl font-semibold text-center mb-6">Technical Proficiency</h2>
-<div class="w-full max-w-md mx-auto relative h-64 sm:h-80">
-<canvas id="skillsChart"></canvas>
-</div>
-<p class="text-center text-xs text-slate-500 mt-4">Data-driven leadership across the project lifecycle.</p>
-</div>
-</div>
-</section>
+        <article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md overflow-hidden hover-float flex flex-col shadow-sm">
+            <a href="project_data_analytics.html" class="block h-48 overflow-hidden relative group">
+                <img src="visual_1_yield_model.jpg" alt="Predictive Yield Model Scatter Plot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute top-2 right-2 bg-brand text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-md uppercase tracking-wide">Case Study</div>
+            </a>
+            <div class="p-6 flex-1 flex flex-col">
+                <h3 class="font-semibold text-lg text-slate-900 dark:text-white leading-tight mb-2">
+                    <a href="project_data_analytics.html" class="hover:text-brand transition-colors">Digital Process Control & Yield Modeling</a>
+                </a>
+                </h3>
+                <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
+                    Synthesized complex production data using <strong>SQL/Python</strong> to forecast yield with 93% accuracy, driving proactive <strong>process optimization</strong>.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-slate-100/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">Python</span>
+                    <span class="px-2 py-1 bg-slate-100/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">Data Synthesis</span>
+                </div>
+                <a href="project_data_analytics.html" class="inline-flex items-center text-brand font-semibold text-sm hover:underline mt-auto group">
+                    View Project <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                </a>
+            </div>
+        </article>
 
-<section id="work" class="py-16 sm:py-20">
-<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-<h2 class="text-2xl font-semibold mb-8">Selected highlights</h2>
+        <article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md overflow-hidden hover-float flex flex-col shadow-sm">
+            <a href="project_tech_transfer.html" class="block h-48 overflow-hidden relative group">
+                <img src="visual_3_tech_transfer.jpg" alt="Tech Transfer Risk Burndown Chart" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute top-2 right-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-md uppercase tracking-wide">Case Study</div>
+            </a>
+            <div class="p-6 flex-1 flex flex-col">
+                <h3 class="font-semibold text-lg text-slate-900 dark:text-white leading-tight mb-2">
+                    <a href="project_tech_transfer.html" class="hover:text-purple-500 transition-colors">Strategic Tech Transfer Leadership</a>
+                </b>
+                </h3>
+                <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
+                    Executed <strong>LSS Black Belt frameworks</strong> and <strong>Root Cause Analysis (RCA)</strong> to accelerate tech transfer, reducing deviation risk by <strong>32% year-over-year.</strong>
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-2 py-1 bg-slate-100/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">LSS/RCA</span>
+                    <span class="px-2 py-1 bg-slate-100/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">CAPA Tracking</span>
+                </div>
+                <a href="project_tech_transfer.html" class="inline-flex items-center text-purple-600 font-semibold text-sm hover:underline mt-auto group">
+                    View Project <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                </a>
+            </div>
+        </article>
 
-<div class="grid md:grid-cols-2 gap-6">
+        <article class="md:col-span-2 rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-8 hover-float flex flex-col md:flex-row items-center gap-8 shadow-sm">
+          <div class="flex-1">
+            <h3 class="font-semibold text-xl text-slate-900 dark:text-white">Capital Projects & Systems Governance</h3>
+            <p class="mt-3 text-slate-600 dark:text-slate-300 leading-relaxed">
+              Led operational implementation for complex <strong>cGMP systems</strong> and authored clear guidance documents, ensuring the entire supply chain met rigorous <strong>operational readiness standards</strong>. Championed cross-functional alignment between engineering, quality, and operations.
+            </p>
+          </div>
+          <div class="hidden md:block text-slate-200 dark:text-slate-800 opacity-30">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24">
+               <path fill-rule="evenodd" d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 00-1.85-1.567h-1.843zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clip-rule="evenodd" />
+            </svg>
+          </div>
+        </article>
 
-<article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md overflow-hidden hover-float flex flex-col shadow-sm">
-<a href="project_data_analytics.html" class="block h-48 overflow-hidden relative group">
-<img src="visual_1_yield_model.jpg" alt="Predictive Yield Model Scatter Plot" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-<div class="absolute top-2 right-2 bg-brand text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-md uppercase tracking-wide">Case Study</div>
-</a>
-<div class="p-6 flex-1 flex flex-col">
-<h3 class="font-semibold text-lg text-slate-900 dark:text-white leading-tight mb-2">
-<a href="project_data_analytics.html" class="hover:text-brand transition-colors">Digital Process Control & Yield Modeling</a>
-</h3>
-<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
-Synthesized complex production data using <strong>SQL/Python</strong> to forecast yield with 93% accuracy, driving proactive <strong>process optimization</strong>.
-</p>
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="px-2 py-1 bg-slate-100/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">Python</span>
-<span class="px-2 py-1 bg-slate-100/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">Data Synthesis</span>
-</div>
-<a href="project_data_analytics.html" class="inline-flex items-center text-brand font-semibold text-sm hover:underline mt-auto group">
-View Project <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
-</a>
-</div>
-</article>
+      </div>
+    </div>
+  </section>
 
-<article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md overflow-hidden hover-float flex flex-col shadow-sm">
-<a href="project_tech_transfer.html" class="block h-48 overflow-hidden relative group">
-<img src="visual_3_tech_transfer.jpg" alt="Tech Transfer Risk Burndown Chart" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-<div class="absolute top-2 right-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-md uppercase tracking-wide">Case Study</div>
-</a>
-<div class="p-6 flex-1 flex flex-col">
-<h3 class="font-semibold text-lg text-slate-900 dark:text-white leading-tight mb-2">
-<a href="project_tech_transfer.html" class="hover:text-purple-500 transition-colors">Strategic Tech Transfer Leadership</a>
-</h3>
-<p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
-Executed <strong>LSS Black Belt frameworks</strong> and <strong>Root Cause Analysis (RCA)</strong> to accelerate tech transfer, reducing deviation risk by <strong>32% year-over-year.</strong>
-</p>
-<div class="flex flex-wrap gap-2 mb-4">
-<span class="px-2 py-1 bg-slate-100/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">LSS/RCA</span>
-<span class="px-2 py-1 bg-slate-100/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-md border border-slate-200 dark:border-slate-700">CAPA Tracking</span>
-</div>
-<a href="project_tech_transfer.html" class="inline-flex items-center text-purple-600 font-semibold text-sm hover:underline mt-auto group">
-View Project <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
-</a>
-</div>
-</article>
+  <section id="featured" class="py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-semibold">Featured credentials</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
 
-<article class="md:col-span-2 rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-8 hover-float flex flex-col md:flex-row items-center gap-8 shadow-sm">
-<div class="flex-1">
-<h3 class="font-semibold text-xl text-slate-900 dark:text-white">Capital Projects & Systems Governance</h3>
-<p class="mt-3 text-slate-600 dark:text-slate-300 leading-relaxed">
-Led operational implementation for complex <strong>cGMP systems</strong> and authored clear guidance documents, ensuring the entire supply chain met rigorous <strong>operational readiness standards</strong>. Championed cross-functional alignment between engineering, quality, and operations.
-</p>
-</div>
-<div class="hidden md:block text-slate-200 dark:text-slate-800 opacity-30">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24">
-<path fill-rule="evenodd" d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 00-1.85-1.567h-1.843zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clip-rule="evenodd" />
-</svg>
-</div>
-</article>
+        <article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-6 hover-float flex items-start gap-6 badge-card">
+          <a href="https://coursera.org/share/1d9734f636e039f1bd2d0d3aa2b45181" target="_blank" rel="noopener">
+            <img src="Jacob_Nichter_Six_Sigma_Black_Belt.png" width="120" height="120" loading="lazy" alt="Six Sigma Black Belt certificate" class="rounded-xl shadow-md object-cover" />
+          </a>
+          <div>
+            <h3 class="font-medium text-lg">
+              <a href="https://coursera.org/share/1d9734f636e039f1bd2d0d3aa2b45181" target="_blank" rel="noopener" class="link-underline">Lean Six Sigma Black Belt</a>
+            </h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
+              Certified in DMAIC methodology, Lean integration, and advanced statistical methods for quantifiable operational excellence.
+            </p>
+          </div>
+        </article>
 
-</div>
-</div>
-</section>
-
-<section id="featured" class="py-16 sm:py-20">
-<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-<h2 class="text-2xl font-semibold">Featured credentials</h2>
-<div class="mt-8 grid md:grid-cols-2 gap-8">
-
-<article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-6 hover-float flex items-start gap-6 badge-card">
-<a href="https://coursera.org/share/1d9734f636e039f1bd2d0d3aa2b45181" target="_blank" rel="noopener">
-<img src="Jacob_Nichter_Six_Sigma_Black_Belt.png" width="120" height="120" loading="lazy" alt="Six Sigma Black Belt certificate" class="rounded-xl shadow-md object-cover" />
-</a>
-<div>
-<h3 class="font-medium text-lg">
-<a href="https://coursera.org/share/1d9734f636e039f1bd2d0d3aa2b45181" target="_blank" rel="noopener" class="link-underline">Lean Six Sigma Black Belt</a>
-</h3>
-<p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
-Certified in DMAIC methodology, Lean integration, and advanced statistical methods for quantifiable operational excellence.
-</p>
-</div>
-</article>
-
-<article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-6 hover-float flex items-start gap-6 badge-card">
-<a href="https://cbe.nd.edu" target="_blank" rel="noopener">
-<img src="ND_secondary_mark.jpg" width="120" height="120" loading="lazy" alt="University of Notre Dame Academic Mark" class="rounded-xl shadow-md object-cover" />
-</a>
-<div>
-<h3 class="font-medium text-lg">
-<a href="https://cbe.nd.edu" target="_blank" rel="noopener" class="link-underline">B.S. Chemical Engineering</a>
-</h3>
-<p class="text-xs font-semibold text-brand uppercase tracking-wide mt-1">University of Notre Dame</p>
-<p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
-Foundational expertise supporting high-stakes biopharmaceutical manufacturing, process development, and data-driven process control.
-</p>
-</div>
-</article>
-
-<article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-6 hover-float flex items-start gap-6 badge-card">
-<a href="https://coursera.org/share/d9948332e87edf3fbe23670be762ffc5" target="_blank" rel="noopener">
-<img src="cert-genentech.png" width="120" height="120" loading="lazy" alt="Data Science in Pharma" class="rounded-xl shadow-md object-cover bg-white" />
-</a>
-<div>
-<h3 class="font-medium text-lg">
-<a href="https://coursera.org/share/d9948332e87edf3fbe23670be762ffc5" target="_blank" rel="noopener" class="link-underline">Data Science with Real World Data in Pharma</a>
-</h3>
-<p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
-Expertise in applying data modeling, statistical analysis, and machine learning principles within a GMP pharmaceutical context (Genentech).
-</p>
-</div>
-</article>
-
-<article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-6 hover-float flex items-start gap-6 badge-card">
-<a href="https://coursera.org/share/d0c143eb290173565d6e1e9ad7067405" target="_blank" rel="noopener">
-<img src="cert-vanderbilt-genAI.png" width="120" height="120" loading="lazy" alt="Generative AI Strategic Leader" class="rounded-xl shadow-md object-cover bg-white" />
-</a>
-<div>
-<h3 class="font-medium text-lg">
-<a href="https://coursera.org/share/d0c143eb290173565d6e1e9ad7067405" target="_blank" rel="noopener" class="link-underline">Generative AI Strategic Leader</a>
-</h3>
-<p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
-Strategic credential focusing on the responsible deployment of AI for business value, innovation, and technical leadership (Vanderbilt).
-</p>
-</div>
-</article>
-
-<article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-6 hover-float flex items-start gap-6 badge-card">
-<a href="https://coursera.org/share/5987f35ca9a0fe9be0182bf741580fa5" target="_blank" rel="noopener">
-<img src="Digital_Mfg_UB.png" width="120" height="120" loading="lazy" alt="Digital Manufacturing & Design badge" class="rounded-xl shadow-md object-cover" />
-</a>
-<div>
-<h3 class="font-medium text-lg">
-<a href="https://coursera.org/share/5987f35ca9a0fe9be0182bf741580fa5" target="_blank" rel="noopener" class="link-underline">Digital Manufacturing & Design: Industry 4.0 Strategy</a>
-</h3>
-<p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
-Strategic expertise in factory modernization, the Digital Thread, and IIoT integration for production systems (University at Buffalo).
-</p>
-</div>
-</article>
-
-<article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-6 hover-float flex items-start gap-6 badge-card">
-    <a href="https://coursera.org/share/6ca2114233ee8c427cd22c4e5b89e62c9" target="_blank" rel="noopener">
-        <img src="u-michigan-chem-health-badge.png" width="120" height="120" loading="lazy" alt="Health Impacts of Chemicals in Consumer Products certificate" class="rounded-xl shadow-md object-cover bg-white" />
-    </a>
-    <div>
-        <h3 class="font-medium text-lg">
-            <a href="https://coursera.org/share/6ca2114233ee8c427cd22c4e5b89e62c9" target="_blank" rel="noopener" class="link-underline">Health Impacts of Chemicals in Consumer Products</a>
-        </h3>
-        <p class="text-xs font-semibold text-brand uppercase tracking-wide mt-1">University of Michigan</p>
-        <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
-            Training in toxicology and regulatory principles, focused on managing the **social and environmental risks** of commercial goods (ESG/Safety focus).
-        </p>
-    </div>
-</article>
-
-</div>
-</div>
-</section>
-
-<section id="credentials" class="py-16 sm:py-20 bg-slate-50/50 dark:bg-slate-900/30 backdrop-blur-sm">
-<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-<h2 class="text-2xl font-semibold">Additional Certifications & Training</h2>
-<p class="mt-2 text-slate-600 dark:text-slate-300">
-Specialized training and advanced credentials complementing a decade of practical experience in process safety, management, and technical operations.
-</p>
-<ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-sm">
-
-<li class="rounded-xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 hover-float flex items-center justify-between">
-<span class="ttwrap">
-<a href="https://coursera.org/share/bb7e47eaa14cc254b91d13cb76c8dd8d" target="_blank" rel="noopener" class="link-underline font-medium">Chemical Hazards and Process Safety</a>
-<span class="tt">UC Davis</span>
-</span>
-<span class="text-xs text-slate-500">UC Davis</span>
-</li>
-
-<li class="rounded-xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 hover-float flex items-center justify-between">
-<span class="ttwrap">
-<a href="https://coursera.org/share/321017cf80f4b32496969e4c5259e974" target="_blank" rel="noopener" class="link-underline font-medium">Strategic Leadership and Management</a>
-<span class="tt">Univ. of Illinois</span>
-</span>
-<span class="text-xs text-slate-500">Illinois</span>
-</li>
-
-<li class="rounded-xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 hover-float flex items-center justify-between">
-<span class="ttwrap">
-<a href="https://coursera.org/share/d54535019e20e77bf8d71a35c3bec663" target="_blank" rel="noopener" class="link-underline font-medium">SAP Professional Fundamentals</a>
-<span class="tt">SAP</span>
-</span>
-<span class="text-xs text-slate-500">SAP</span>
-</li>
-
-<li class="rounded-xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 hover-float flex items-center justify-between">
-<span class="ttwrap">
-<a href="https://coursera.org/share/a878fec9de8d2eac632d4cfa9a05615e" target="_blank" rel="noopener" class="link-underline font-medium">Advanced Data Analytics (Google)</a>
-<span class="tt">Google</span>
-</span>
-<span class="text-xs text-slate-500">Google</span>
-</li>
-
-<li class="rounded-xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 hover-float flex items-center justify-between">
-<span class="ttwrap">
-<a href="https://coursera.org/share/b0029247194f943c0947607c5fae7210" target="_blank" rel="noopener" class="link-underline font-medium">Engineering Project Management</a>
-<span class="tt">Rice University</span>
-</span>
-<span class="text-xs text-slate-500">Rice</span>
-</li>
-
-<li class="rounded-xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-4 hover-float flex items-center justify-between">
-<span class="ttwrap">
-<a href="https://coursera.org/share/d342d191f66f07f37cc46d6df00348a6" target="_blank" rel="noopener" class="link-underline font-medium">Drug Development Product Management</a>
-<span class="tt">UC San Diego</span>
-</span>
-<span class="text-xs text-slate-500">UC San Diego</span>
-</li>
-
-</ul>
-</div>
-</section>
-
-<section class="py-12 border-t border-slate-200/60 dark:border-slate-800 backdrop-blur-sm">
-<div class="mx-auto max-w-4xl px-4 text-center">
-<p class="text-sm font-medium text-brand mb-2 uppercase tracking-wider">For Technical Leaders</p>
-<h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Need a portfolio that matches your expertise?</h3>
-<p class="text-slate-600 dark:text-slate-300 mb-8 max-w-xl mx-auto">
-Stop relying on static PDFs. Let's engineer a high-performance digital asset that showcases your data and leadership skills.
-</p>
-<a href="https://jnichter.gumroad.com" target="_blank" class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-8 py-3 text-sm font-semibold text-white transition-all hover:bg-slate-700 hover:-translate-y-1 shadow-lg dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200">
-        Access Technical Resources →
-</a>
-</div>
-</section>
-
-  <section id="contact" class="py-20">
-    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-8 md:p-12 text-center shadow-sm">
-        
-        <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Let's Connect</h2>
-        
-        <p class="text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto">
-          I am currently available for <strong>Senior Process Engineer</strong>, <strong>Technical Operations</strong>, and <strong>Consulting</strong> roles in the Pasadena & Greater LA area.
-        </p>
-
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <a href="mailto:jacob@jnichter.com" class="hover-float inline-flex items-center gap-2 rounded-xl bg-brand px-8 py-4 text-white font-semibold shadow-soft text-lg transition-all hover:bg-sky-600">
-            <span>✉️</span> jacob@jnichter.com
-          </a>
-
-          <a href="https://www.linkedin.com/in/jnichter" target="_blank" rel="noopener" class="hover-float inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-8 py-4 text-slate-900 dark:text-white font-semibold text-lg hover:bg-slate-50 dark:hover:bg-slate-700">
-            <span>in</span> LinkedIn
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-<footer class="border-t border-slate-200/60 dark:border-slate-800 py-8 text-center text-sm text-slate-500 dark:text-slate-400 backdrop-blur-md">
-<p>© <span id="year"></span> Jacob Nichter. All rights reserved. • <a href="https://github.com/jmnichter/jmnichter.github.io" target="_blank" class="link-underline">Source</a></p>
-</footer>
-
-<script>
-const storageKey = 'theme';
-const themeToggle = document.getElementById('themeToggle');
-const mobileToggle = document.getElementById('mobileMenuToggle');
-const mobileMenu = document.getElementById('mobileMenu');
-const root = document.documentElement;
-
-function setTheme(t){
-if(t==='dark'||t===null){
-root.classList.add('dark');
-themeToggle.textContent='🌙'; 
-} else {
-root.classList.remove('dark');
-themeToggle.textContent='☀️'; 
-}
-}
-
-const stored = localStorage.getItem(storageKey);
-setTheme(stored);
-
-themeToggle?.addEventListener('click', ()=>{
-const next = root.classList.contains('dark') ? 'light' : 'dark';
-localStorage.setItem(storageKey, next);
-setTheme(next);
-});
-
-mobileToggle?.addEventListener('click', () => {
-const isHidden = mobileMenu.classList.contains('hidden');
-if (isHidden) {
-mobileMenu.classList.remove('hidden');
-mobileToggle.setAttribute('aria-expanded', 'true');
-} else {
-mobileMenu.classList.add('hidden');
-mobileToggle.setAttribute('aria-expanded', 'false');
-}
-});
-
-mobileMenu?.querySelectorAll('a').forEach(link => {
-link.addEventListener('click', () => {
-mobileMenu.classList.add('hidden');
-mobileToggle.setAttribute('aria-expanded', 'false');
-});
-});
-
-document.getElementById('year').textContent = new Date().getFullYear();
-
-const io = new IntersectionObserver((entries)=>{
-entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('show'); });
-}, { threshold: 0.15 });
-
-document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
-
-// Typewriter Effect
-// UPDATED: Keywords for Manufacturing Project Manager Role
-const words = ["Capital Projects.", "Lean Six Sigma.", "Tech Transfer.", "Data-Driven Strategy.", "GMP Compliance.", "Process Optimization."];
-let i = 0;
-let timer;
-
-function typingEffect() {
-let word = words[i].split("");
-var loopTyping = function() {
-if (word.length > 0) {
-document.getElementById('typewriter').innerHTML += word.shift();
-} else {
-setTimeout(deletingEffect, 2000);
-return false;
-}
-timer = setTimeout(loopTyping, 100);
-};
-loopTyping();
-}
-
-function deletingEffect() {
-let word = words[i].split("");
-var loopDeleting = function() {
-if (word.length > 0) {
-word.pop();
-document.getElementById('typewriter').innerHTML = word.join("");
-} else {
-if (words.length > (i + 1)) { i++; } else { i = 0; }
-typingEffect();
-return false;
-}
-timer = setTimeout(loopDeleting, 50);
-};
-loopDeleting();
-}
-
-typingEffect();
-
-// Radar Chart (Mobile Optimized)
-document.addEventListener("DOMContentLoaded", function() {
-const ctx = document.getElementById('skillsChart').getContext('2d');
-const isDark = document.documentElement.classList.contains('dark');
-const textColor = isDark ? '#e2e8f0' : '#1e293b'; 
-const gridColor = isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
-
-// Detect Mobile Screen Width
-const isMobile = window.innerWidth < 640;
-const labelSize = isMobile ? 9 : 12; // Smaller font on mobile (9px) vs desktop (12px)
-
-new Chart(ctx, {
-type: 'radar',
-data: {
-// UPDATED: Skills for PM / Tech Ops
-labels: ['Project Mgmt', 'Tech Transfer', 'Data Synthesis', 'Audit/Risk', 'Lean Six Sigma', 'Leadership'],
-datasets: [{
-label: 'Competency Level',
-data: [95, 90, 85, 90, 95, 90], 
-fill: true,
-backgroundColor: 'rgba(16, 185, 129, 0.2)',
-borderColor: '#10b981',
-pointBackgroundColor: '#10b981',
-pointBorderColor: '#fff',
-pointHoverBackgroundColor: '#fff',
-pointHoverBorderColor: '#10b981'
-}]
-},
-options: {
-responsive: true,
-maintainAspectRatio: false,
-layout: {
-padding: isMobile ? 10 : 20 
-},
-elements: {
-line: { borderWidth: 3 }
-},
-scales: {
-r: {
-angleLines: { color: gridColor },
-grid: { color: gridColor },
-pointLabels: {
-color: textColor,
-font: { size: labelSize, family: "'Inter', sans-serif" },
-padding: 10 
-},
-ticks: { display: false, backdropColor: 'transparent' },
-suggestedMin: 0,
-suggestedMax: 100
-}
-},
-plugins: {
-legend: { display: false }
-}
-}
-});
-});
-
-// Scroll Spy Logic
-document.addEventListener("DOMContentLoaded", function() {
-const navLinks = document.querySelectorAll('#desktop-nav a');
-const sections = document.querySelectorAll('section[id]');
-
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-const id = entry.target.getAttribute('id');
-// Fix for nav link matching
-const navLink = document.querySelector(`#desktop-nav a[href="#${id}"]`);
-
-if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
-navLinks.forEach(link => link.classList.remove('active'));
-if (navLink) {
-navLink.classList.add('active');
-}
-}
-});
-}, { 
-threshold: 0.3,
-rootMargin: "-100px 0px -100px 0px"
-});
-
-sections.forEach(section => {
-observer.observe(section);
-});
-});
-</script>
-
-</body>
-</html>
+        <article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-6 hover-float flex items-start gap-6 badge-card">
+          <a href="https://cbe.nd.edu" target="_blank" rel="noopener">
