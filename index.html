@@ -72,6 +72,8 @@
     .ttwrap {position:relative; display:inline-flex; align-items:center}
     .tt {position:absolute; left:50%; top:100%; margin-top:.5rem; transform:translate(-50%,0) scale(.95); background:rgba(2,6,23,.96); color:#fff; padding:.375rem .5rem; border-radius:.5rem; font-size:.75rem; line-height:1; white-space:nowrap; box-shadow:0 10px 20px rgba(0,0,0,.25); opacity:0; pointer-events:none; transition:opacity .15s, transform .15s; z-index:40}
     .ttwrap:hover .tt, .ttwrap:focus-within .tt {opacity:1; transform:translate(-50%,0) scale(1)}
+    /* MINIMAL CSS FIX FOR IMAGE STABILITY */
+    img { max-width: 100%; height: auto; }
     
     /* SCROLL SPY ACTIVE STATE */
     .desktop-nav a.active {
@@ -189,7 +191,7 @@
         </div>
         <p class="text-center text-xs text-slate-500 mt-4">Data-driven leadership across the project lifecycle.</p>
       </div>
-    </div>
+      </div>
   </section>
 
   <section id="work" class="py-16 sm:py-20">
@@ -228,7 +230,6 @@
             <div class="p-6 flex-1 flex flex-col">
                 <h3 class="font-semibold text-lg text-slate-900 dark:text-white leading-tight mb-2">
                     <a href="project_tech_transfer.html" class="hover:text-purple-500 transition-colors">Strategic Tech Transfer Leadership</a>
-                </b>
                 </h3>
                 <p class="text-sm text-slate-600 dark:text-slate-300 mb-4 flex-1">
                     Executed <strong>LSS Black Belt frameworks</strong> and <strong>Root Cause Analysis (RCA)</strong> to accelerate tech transfer, reducing deviation risk by <strong>32% year-over-year.</strong>
@@ -306,7 +307,6 @@
             <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">
               Expertise in applying data modeling, statistical analysis, and machine learning principles within a GMP pharmaceutical context (Genentech).
             </p>
-          </div>
         </article>
 
         <article class="rounded-2xl border border-slate-200/60 dark:border-slate-700/50 bg-white/60 dark:bg-slate-900/60 backdrop-blur-md p-6 hover-float flex items-start gap-6 badge-card">
